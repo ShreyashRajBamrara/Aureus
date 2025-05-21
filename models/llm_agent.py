@@ -4,24 +4,23 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Simple mock function for the advisor
-def ask(user_input, chat_history=None):
-    """Process a user query and return a response
-    
-    Args:
-        user_input (str): The user's query
-        chat_history (list, optional): Chat history for context
-        
-    Returns:
-        str: The response
-    """
-    # This is a simple mock response - in a real implementation, this would connect to an LLM
-    if 'forecast' in user_input.lower():
+def ask(user_input, data_context=None, user_id="default_user", stream_handler=None):
+    """Process a user query and return the LLM response, using data_context if provided"""
+    if data_context:
+        prompt = f"Financial Data Context: {data_context}\n\nUser Question: {user_input}"
+    else:
+        prompt = user_input
+    # If using a real LLM, pass prompt to the chain. For now, use the mock logic:
+    # chain = get_llm_chain()
+    # return chain.invoke({"input": prompt}, config={"configurable": {"session_id": user_id}})
+    # Mock logic below:
+    if 'forecast' in prompt.lower():
         return "Based on your current financial data, I forecast a 12% increase in revenue over the next quarter if current trends continue. Would you like me to analyze specific expense categories?"
-    elif 'expense' in user_input.lower() or 'spending' in user_input.lower():
+    elif 'expense' in prompt.lower() or 'spending' in prompt.lower():
         return "Your highest expense categories are Marketing (32%), Engineering (28%), and Admin (18%). There's an opportunity to optimize Marketing spend which has increased 15% over the last quarter."
-    elif 'anomaly' in user_input.lower() or 'fraud' in user_input.lower():
+    elif 'anomaly' in prompt.lower() or 'fraud' in prompt.lower():
         return "I've detected 3 potential anomalies in your recent transactions. The most significant is a ₹411,492 payment to Google on May 23rd, which is 10x larger than your typical Google payments."
-    elif 'runway' in user_input.lower() or 'burn' in user_input.lower():
+    elif 'runway' in prompt.lower() or 'burn' in prompt.lower():
         return "At your current burn rate of approximately ₹2.5M per month, your runway is estimated at 4.2 months. I recommend reviewing your SaaS subscriptions which have increased by 22% this quarter."
     else:
         return "I can help answer questions about your financial data, including expense analysis, anomaly detection, forecasting, and runway calculations. What specific aspect would you like insights on?"
