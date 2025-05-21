@@ -1,0 +1,501 @@
+Date,Expense ID,Category,Description,Vendor,Payment Method,Amount,Currency,Department,Approved By,Status,Invoice No.,Notes,Employee Name
+2025-01-29,EXP-0001,Travel,Travel related expense,Google,Cash,11548.93,INR,Sales,David Lin,Paid,INV-7912,-,Rahul Joshi
+2025-01-24,EXP-0002,Supplies,Supplies related expense,Amazon,Credit Card,28281.63,INR,Engineering,Aisha Khan,Paid,INV-8359,Auto-generated test data,Emily Chen
+2025-01-02,EXP-0003,Utilities,Utilities related expense,LinkedIn,Bank Transfer,14254.63,INR,Marketing,Ravi Iyer,Paid,INV-2519,Auto-generated test data,Emily Chen
+2025-04-02,EXP-0004,Marketing,Marketing related expense,Google,Credit Card,36621.72,INR,Engineering,John Doe,Pending,INV-2291,Auto-generated test data,Meera Iyer
+2025-04-03,EXP-0005,Supplies,Supplies related expense,Domino's,Credit Card,33232.53,INR,Admin,John Doe,Paid,INV-2654,Auto-generated test data,Emily Chen
+2025-04-27,EXP-0006,Marketing,Marketing related expense,BSES,Bank Transfer,18085.9,INR,Admin,John Doe,Reimbursed,INV-3803,Auto-generated test data,Emily Chen
+2025-03-04,EXP-0007,Utilities,Utilities related expense,Zoom,UPI,13862.42,INR,Engineering,Jane Smith,Reimbursed,INV-6313,Auto-generated test data,Carlos Martinez
+2025-01-15,EXP-0008,Supplies,Supplies related expense,Indigo Airlines,Bank Transfer,20357.66,INR,Sales,Jane Smith,Reimbursed,INV-6155,-,Carlos Martinez
+2025-05-08,EXP-0009,Consulting,Consulting related expense,Zoom,Cash,13611.57,INR,Marketing,David Lin,Reimbursed,INV-5304,Auto-generated test data,Emily Chen
+2025-04-20,EXP-0010,Consulting,Consulting related expense,Facebook,Cash,49867.63,INR,Marketing,David Lin,Pending,INV-2489,Auto-generated test data,John Smith
+2025-01-29,EXP-0011,Utilities,Utilities related expense,BSES,UPI,30022.25,INR,Finance,Aisha Khan,Reimbursed,INV-8668,Auto-generated test data,Priya Verma
+2025-05-22,EXP-0012,Travel,Travel related expense,Domino's,Bank Transfer,38545.64,INR,Admin,John Doe,Pending,INV-8123,-,John Smith
+2025-01-01,EXP-0013,Software,Software related expense,BSES,Credit Card,43590.67,INR,Admin,David Lin,Reimbursed,INV-4258,-,Meera Iyer
+2025-02-11,EXP-0014,Travel,Travel related expense,Facebook,UPI,1464.1,INR,Admin,Ravi Iyer,Paid,INV-1949,-,Priya Verma
+2025-05-26,EXP-0015,Meals,Meals related expense,Domino's,UPI,40893.15,INR,Engineering,Jane Smith,Paid,INV-8787,Auto-generated test data,Carlos Martinez
+2025-02-12,EXP-0016,Software,Software related expense,LinkedIn,Cash,46481.22,INR,Marketing,Ravi Iyer,Pending,INV-7118,Auto-generated test data,Meera Iyer
+2025-05-13,EXP-0017,Training,Training related expense,Domino's,Cash,11622.52,INR,Admin,John Doe,Reimbursed,INV-4770,Auto-generated test data,Arjun Rao
+2025-01-02,EXP-0018,Meals,Meals related expense,Indigo Airlines,Cash,3836.32,INR,Sales,Ravi Iyer,Paid,INV-9423,-,Emily Chen
+2025-05-05,EXP-0019,Supplies,Supplies related expense,BSES,UPI,12528.36,INR,Finance,Aisha Khan,Paid,INV-2545,-,Rahul Joshi
+2025-04-21,EXP-0020,Marketing,Marketing related expense,LinkedIn,UPI,23617.72,INR,Sales,John Doe,Paid,INV-7596,Auto-generated test data,Rahul Joshi
+2025-01-28,EXP-0021,Supplies,Supplies related expense,Amazon,Cash,27046.14,INR,Marketing,Aisha Khan,Paid,INV-5563,Auto-generated test data,Carlos Martinez
+2025-01-20,EXP-0022,Training,Training related expense,Domino's,Credit Card,32781.17,INR,Engineering,John Doe,Paid,INV-4872,-,Ravi Sharma
+2025-05-05,EXP-0023,Training,Training related expense,Amazon,UPI,45170.92,INR,Marketing,Aisha Khan,Paid,INV-7396,-,Ravi Sharma
+2025-04-27,EXP-0024,Software,Software related expense,LinkedIn,UPI,8162.44,INR,Admin,Jane Smith,Paid,INV-9883,-,Arjun Rao
+2025-03-22,EXP-0025,Travel,Travel related expense,Indigo Airlines,UPI,25391.09,INR,Engineering,Jane Smith,Paid,INV-9320,-,John Smith
+2025-02-17,EXP-0026,Meals,Meals related expense,Domino's,Cash,20486.89,INR,Engineering,Jane Smith,Reimbursed,INV-1651,Auto-generated test data,Ravi Sharma
+2025-04-18,EXP-0027,Marketing,Marketing related expense,Google,Cash,33651.44,INR,Admin,Jane Smith,Pending,INV-7484,-,Meera Iyer
+2025-03-18,EXP-0028,Training,Training related expense,Facebook,Credit Card,961.12,INR,Engineering,David Lin,Paid,INV-2200,Auto-generated test data,Sandeep Menon
+2025-05-10,EXP-0029,Software,Software related expense,BSES,Bank Transfer,44102.78,INR,Marketing,Ravi Iyer,Pending,INV-3584,Auto-generated test data,Arjun Rao
+2025-05-20,EXP-0030,Software,Software related expense,Indigo Airlines,Bank Transfer,46621.92,INR,Sales,Jane Smith,Pending,INV-2891,Auto-generated test data,Ravi Sharma
+2025-05-22,EXP-0031,Utilities,Utilities related expense,Google,Bank Transfer,30439.08,INR,Admin,Jane Smith,Reimbursed,INV-5325,Auto-generated test data,Arjun Rao
+2025-03-06,EXP-0032,Travel,Travel related expense,Domino's,UPI,41552.73,INR,Sales,John Doe,Pending,INV-3143,Auto-generated test data,Priya Verma
+2025-03-09,EXP-0033,Utilities,Utilities related expense,Zoom,UPI,28264.89,INR,Sales,John Doe,Reimbursed,INV-3442,Auto-generated test data,Priya Verma
+2025-04-05,EXP-0034,Utilities,Utilities related expense,LinkedIn,Cash,2570.53,INR,Admin,John Doe,Pending,INV-4441,Auto-generated test data,Emily Chen
+2025-01-27,EXP-0035,Marketing,Marketing related expense,LinkedIn,Cash,46325.31,INR,Marketing,Jane Smith,Paid,INV-7755,-,Ravi Sharma
+2025-03-27,EXP-0036,Consulting,Consulting related expense,Amazon,Bank Transfer,8380.29,INR,Sales,Aisha Khan,Paid,INV-8711,-,Arjun Rao
+2025-04-28,EXP-0037,Marketing,Marketing related expense,Google,Cash,11534.72,INR,Marketing,Aisha Khan,Pending,INV-5564,Auto-generated test data,Meera Iyer
+2025-03-13,EXP-0038,Marketing,Marketing related expense,LinkedIn,Bank Transfer,46992.24,INR,Sales,Ravi Iyer,Paid,INV-5349,-,Meera Iyer
+2025-04-22,EXP-0039,Marketing,Marketing related expense,Facebook,UPI,30507.34,INR,Engineering,John Doe,Pending,INV-4114,-,Meera Iyer
+2025-04-22,EXP-0040,Travel,Travel related expense,Amazon,Bank Transfer,21849.22,INR,Admin,David Lin,Pending,INV-3041,Auto-generated test data,John Smith
+2025-03-18,EXP-0041,Software,Software related expense,LinkedIn,Bank Transfer,20418.82,INR,Admin,David Lin,Paid,INV-4143,Auto-generated test data,John Smith
+2025-04-08,EXP-0042,Utilities,Utilities related expense,Google,UPI,27622.89,INR,Sales,Ravi Iyer,Pending,INV-4443,Auto-generated test data,Sandeep Menon
+2025-05-29,EXP-0043,Marketing,Marketing related expense,Zoom,UPI,22386.91,INR,Marketing,David Lin,Pending,INV-3780,Auto-generated test data,Aisha Khan
+2025-03-14,EXP-0044,Marketing,Marketing related expense,Domino's,Cash,33803.39,INR,Marketing,Jane Smith,Paid,INV-1400,-,Ravi Sharma
+2025-05-02,EXP-0045,Meals,Meals related expense,Zoom,UPI,44363.78,INR,Engineering,Jane Smith,Reimbursed,INV-7291,Auto-generated test data,Rahul Joshi
+2025-03-04,EXP-0046,Utilities,Utilities related expense,Indigo Airlines,Credit Card,39031.81,INR,Marketing,Jane Smith,Reimbursed,INV-9486,Auto-generated test data,Emily Chen
+2025-05-23,EXP-0047,Supplies,Supplies related expense,Domino's,UPI,7100.29,INR,Finance,David Lin,Reimbursed,INV-6198,Auto-generated test data,Sandeep Menon
+2025-04-24,EXP-0048,Consulting,Consulting related expense,Zoom,Cash,37310.94,INR,Finance,Aisha Khan,Pending,INV-5050,Auto-generated test data,Sandeep Menon
+2025-03-12,EXP-0049,Training,Training related expense,Amazon,Bank Transfer,22273.69,INR,Admin,Jane Smith,Pending,INV-6502,Auto-generated test data,Arjun Rao
+2025-05-19,EXP-0050,Meals,Meals related expense,BSES,Cash,11947.44,INR,Marketing,Jane Smith,Paid,INV-7797,Auto-generated test data,Emily Chen
+2025-05-19,EXP-0051,Training,Training related expense,LinkedIn,Credit Card,10738.3,INR,Finance,Aisha Khan,Reimbursed,INV-1320,Auto-generated test data,John Smith
+2025-05-28,EXP-0052,Consulting,Consulting related expense,Zoom,Credit Card,47165.71,INR,Admin,Aisha Khan,Pending,INV-9818,Auto-generated test data,Priya Verma
+2025-05-20,EXP-0053,Supplies,Supplies related expense,Zoom,Cash,14010.3,INR,Finance,John Doe,Pending,INV-6507,Auto-generated test data,Priya Verma
+2026-01-13,EXP-0054,Utilities,Utilities related expense,Zoom,Cash,49045.74,INR,Engineering,John Doe,Pending,INV-1444,Future-dated expense,Arjun Rao
+2026-03-15,EXP-0055,Utilities,Utilities related expense,Zoom,Cash,2989.09,INR,Finance,Ravi Iyer,Paid,INV-8449,Future-dated expense,John Smith
+2025-04-08,EXP-0056,Software,Software related expense,LinkedIn,Bank Transfer,41828.09,INR,Finance,John Doe,Reimbursed,INV-9837,-,Priya Verma
+2025-03-31,EXP-0057,Supplies,Supplies related expense,Domino's,Credit Card,37834.54,INR,Marketing,Jane Smith,Paid,INV-3496,-,Aisha Khan
+2025-05-02,EXP-0058,Meals,Meals related expense,Amazon,UPI,35123.52,INR,Admin,Jane Smith,Reimbursed,INV-2876,Auto-generated test data,Emily Chen
+2025-02-11,EXP-0059,Software,Software related expense,Domino's,Credit Card,46479.91,INR,Engineering,Aisha Khan,Pending,INV-4249,-,Rahul Joshi
+2025-03-04,EXP-0060,Meals,Meals related expense,Google,Credit Card,39913.25,INR,Engineering,John Doe,Pending,INV-9728,Auto-generated test data,Sandeep Menon
+2025-04-05,EXP-0061,Meals,Meals related expense,Facebook,Credit Card,42553.99,INR,Finance,John Doe,Pending,INV-6934,Auto-generated test data,Rahul Joshi
+2025-04-28,EXP-0062,Utilities,Utilities related expense,LinkedIn,Cash,36822.87,INR,Admin,David Lin,Reimbursed,INV-8921,Auto-generated test data,John Smith
+2025-03-10,EXP-0063,Marketing,Marketing related expense,Amazon,Credit Card,14306.95,INR,Finance,Jane Smith,Pending,INV-7209,Auto-generated test data,Aisha Khan
+2025-05-07,EXP-0064,Marketing,Marketing related expense,BSES,UPI,10999.93,INR,Admin,Ravi Iyer,Pending,INV-5526,Auto-generated test data,John Smith
+2025-05-13,EXP-0065,Supplies,Supplies related expense,Domino's,Cash,36143.7,INR,Finance,David Lin,Paid,INV-8800,Auto-generated test data,Arjun Rao
+2025-05-06,EXP-0066,Training,Training related expense,Indigo Airlines,Credit Card,15064.66,INR,Finance,Jane Smith,Pending,INV-7046,Auto-generated test data,Ravi Sharma
+2025-05-16,EXP-0067,Marketing,Marketing related expense,LinkedIn,Bank Transfer,17914.62,INR,Finance,Ravi Iyer,Pending,INV-5118,-,John Smith
+2025-02-19,EXP-0068,Marketing,Marketing related expense,Domino's,Cash,9981.28,INR,Finance,Ravi Iyer,Reimbursed,INV-9595,Auto-generated test data,Carlos Martinez
+2025-01-26,EXP-0069,Supplies,Supplies related expense,Google,Cash,18363.61,INR,Admin,John Doe,Reimbursed,INV-9751,-,Aisha Khan
+2025-01-12,EXP-0070,Travel,Travel related expense,Google,Cash,32074.55,INR,Finance,John Doe,Paid,INV-5658,Auto-generated test data,Ravi Sharma
+2025-04-23,EXP-0071,Marketing,Marketing related expense,BSES,Credit Card,12997.68,INR,Finance,John Doe,Paid,INV-7565,Auto-generated test data,Emily Chen
+2025-05-28,EXP-0072,Travel,Travel related expense,BSES,Cash,40651.53,INR,Admin,John Doe,Paid,INV-2940,Auto-generated test data,Emily Chen
+2025-04-17,EXP-0073,Supplies,Supplies related expense,LinkedIn,UPI,45470.97,INR,Admin,David Lin,Pending,INV-6003,Auto-generated test data,Carlos Martinez
+2025-01-16,EXP-0074,Meals,Meals related expense,Amazon,Cash,13599.98,INR,Sales,Jane Smith,Paid,INV-3847,Auto-generated test data,Carlos Martinez
+2025-02-10,EXP-0075,Travel,Travel related expense,LinkedIn,UPI,34623.87,INR,Finance,Ravi Iyer,Paid,INV-4792,-,Aisha Khan
+2025-03-14,EXP-0076,Training,Training related expense,Domino's,Cash,46233.6,INR,Engineering,Jane Smith,Pending,INV-2880,Auto-generated test data,Priya Verma
+2025-02-08,EXP-0077,Software,Software related expense,BSES,Credit Card,3452.08,INR,Admin,David Lin,Reimbursed,INV-5728,Auto-generated test data,John Smith
+2025-04-30,EXP-0078,Software,Software related expense,LinkedIn,Bank Transfer,25273.37,INR,Finance,Aisha Khan,Paid,INV-1653,Auto-generated test data,Ravi Sharma
+2025-03-24,EXP-0079,Software,Software related expense,Indigo Airlines,Credit Card,11831.76,INR,Engineering,David Lin,Paid,INV-5415,Auto-generated test data,Carlos Martinez
+2025-02-14,EXP-0080,Training,Training related expense,Zoom,Bank Transfer,9483.71,INR,Engineering,Aisha Khan,Reimbursed,INV-9056,Auto-generated test data,Ravi Sharma
+2025-05-01,EXP-0081,Marketing,Marketing related expense,,Bank Transfer,16392.38,INR,Sales,Jane Smith,Pending,INV-7744,Vendor information missing,Arjun Rao
+2025-03-15,EXP-0082,Consulting,Consulting related expense,Indigo Airlines,UPI,4858.96,INR,Admin,Ravi Iyer,Paid,INV-7622,Auto-generated test data,Ravi Sharma
+2025-01-01,EXP-0083,Training,Training related expense,LinkedIn,Credit Card,9785.34,INR,Admin,David Lin,Pending,INV-8242,Auto-generated test data,Emily Chen
+2025-02-22,EXP-0084,Software,Software related expense,BSES,Bank Transfer,22186.75,INR,Finance,John Doe,Paid,INV-4920,Auto-generated test data,Meera Iyer
+2025-03-21,EXP-0085,Travel,Travel related expense,LinkedIn,Credit Card,11622.68,INR,Sales,Aisha Khan,Paid,INV-3522,Auto-generated test data,John Smith
+2026-03-07,EXP-0086,Software,Software related expense,LinkedIn,UPI,49022.11,INR,Marketing,Aisha Khan,Reimbursed,INV-3369,Future-dated expense,Sandeep Menon
+2025-05-11,EXP-0087,Utilities,Utilities related expense,Domino's,Bank Transfer,38747.42,INR,Finance,Ravi Iyer,Reimbursed,INV-5377,Auto-generated test data,Priya Verma
+2025-03-14,EXP-0088,Software,Software related expense,Zoom,Cash,22604.1,INR,Finance,Ravi Iyer,Pending,INV-9903,Auto-generated test data,Sandeep Menon
+2025-03-24,EXP-0089,Supplies,Supplies related expense,Amazon,UPI,12061.34,INR,Finance,John Doe,Pending,INV-8749,Auto-generated test data,Ravi Sharma
+2025-04-08,EXP-0090,Consulting,Consulting related expense,BSES,UPI,48258.81,INR,Marketing,David Lin,Reimbursed,INV-6439,Auto-generated test data,Carlos Martinez
+2025-04-23,EXP-0091,Meals,Meals related expense,Zoom,Credit Card,36260.97,INR,Finance,Jane Smith,Paid,INV-8692,Auto-generated test data,Rahul Joshi
+2025-03-09,EXP-0092,Marketing,Marketing related expense,LinkedIn,Credit Card,42662.38,INR,Engineering,Aisha Khan,Pending,INV-8994,Auto-generated test data,John Smith
+2025-01-10,EXP-0093,Meals,Meals related expense,,Bank Transfer,49872.58,INR,Sales,Aisha Khan,Paid,INV-2646,Vendor information missing,John Smith
+2025-03-18,EXP-0094,Travel,Travel related expense,Indigo Airlines,Bank Transfer,39909.1,INR,Admin,Ravi Iyer,Pending,INV-8056,-,Aisha Khan
+2025-05-16,EXP-0095,Consulting,Consulting related expense,BSES,Cash,9165.93,INR,Engineering,Aisha Khan,Reimbursed,INV-4945,Auto-generated test data,Priya Verma
+2025-05-30,EXP-0096,Utilities,Utilities related expense,Amazon,UPI,32076.28,INR,Finance,Ravi Iyer,Reimbursed,INV-1153,Auto-generated test data,Carlos Martinez
+2025-04-30,EXP-0097,Software,Software related expense,BSES,Credit Card,22365.62,INR,Admin,David Lin,Pending,INV-7951,Auto-generated test data,Arjun Rao
+2025-04-27,EXP-0098,Software,Software related expense,Amazon,UPI,42740.11,INR,Sales,Jane Smith,Pending,INV-6881,Auto-generated test data,Carlos Martinez
+2025-03-17,EXP-0099,Travel,Travel related expense,LinkedIn,Bank Transfer,900.85,INR,Sales,David Lin,Reimbursed,INV-9138,Auto-generated test data,Sandeep Menon
+2025-03-15,EXP-0100,Supplies,Supplies related expense,Facebook,Cash,32012.58,INR,Engineering,Ravi Iyer,Reimbursed,INV-3240,Auto-generated test data,Sandeep Menon
+2025-01-11,EXP-0101,Software,Software related expense,Zoom,Credit Card,29188.9,INR,Marketing,John Doe,Pending,INV-6352,Auto-generated test data,Emily Chen
+2025-02-14,EXP-0102,Supplies,Supplies related expense,BSES,Bank Transfer,26777.19,INR,Admin,Jane Smith,Pending,INV-8894,Auto-generated test data,Aisha Khan
+2025-03-17,EXP-0103,Marketing,Marketing related expense,Domino's,UPI,48163.22,INR,Marketing,Jane Smith,Reimbursed,INV-7511,Auto-generated test data,Rahul Joshi
+2025-05-23,EXP-0104,Marketing,Marketing related expense,Domino's,UPI,1188.97,INR,Engineering,John Doe,Pending,INV-7038,Auto-generated test data,John Smith
+2025-03-09,EXP-0105,Consulting,Consulting related expense,Facebook,Credit Card,33904.41,INR,Finance,John Doe,Reimbursed,INV-6374,Auto-generated test data,Ravi Sharma
+2025-02-26,EXP-0106,Meals,Meals related expense,Zoom,Bank Transfer,32637.35,INR,Sales,Jane Smith,Paid,INV-1609,Auto-generated test data,Meera Iyer
+2025-05-07,EXP-0107,Meals,Meals related expense,Domino's,Cash,44419.34,INR,Marketing,Aisha Khan,Pending,INV-7078,Auto-generated test data,Carlos Martinez
+2025-05-19,EXP-0108,Consulting,Consulting related expense,BSES,UPI,32918.63,INR,Finance,David Lin,Pending,INV-5583,-,Arjun Rao
+2025-04-05,EXP-0109,Supplies,Supplies related expense,Zoom,UPI,47552.48,INR,Admin,John Doe,Reimbursed,INV-7018,Auto-generated test data,Aisha Khan
+2025-04-02,EXP-0110,Travel,Travel related expense,LinkedIn,Bank Transfer,9895.52,INR,Sales,Aisha Khan,Paid,INV-4475,Auto-generated test data,Carlos Martinez
+2025-01-06,EXP-0111,Travel,Travel related expense,Facebook,Cash,49446.63,INR,Engineering,Jane Smith,Paid,INV-4394,Auto-generated test data,Meera Iyer
+2025-03-01,EXP-0112,Marketing,Marketing related expense,BSES,Credit Card,14225.1,INR,Marketing,Jane Smith,Reimbursed,INV-5106,Auto-generated test data,Carlos Martinez
+2025-01-29,EXP-0113,Travel,Travel related expense,BSES,Credit Card,18232.99,INR,Marketing,David Lin,Pending,INV-1258,-,Sandeep Menon
+2025-01-14,EXP-0114,Utilities,Utilities related expense,LinkedIn,Credit Card,37410.43,INR,Finance,Aisha Khan,Pending,INV-9408,Auto-generated test data,Sandeep Menon
+2025-04-26,EXP-0115,Supplies,Supplies related expense,Indigo Airlines,Bank Transfer,23173.1,INR,Sales,John Doe,Pending,INV-7580,Auto-generated test data,Rahul Joshi
+2025-01-28,EXP-0116,Training,Training related expense,Zoom,Credit Card,45013.7,INR,Admin,David Lin,Paid,INV-2076,-,Meera Iyer
+2025-05-30,EXP-0117,Marketing,Marketing related expense,LinkedIn,Bank Transfer,22958.91,INR,Engineering,Aisha Khan,Paid,INV-2874,Auto-generated test data,Priya Verma
+2025-05-22,EXP-0118,Supplies,Supplies related expense,LinkedIn,UPI,44460.51,INR,Finance,Ravi Iyer,Pending,INV-7532,Auto-generated test data,Rahul Joshi
+2025-01-25,EXP-0119,Marketing,Marketing related expense,LinkedIn,Bank Transfer,33422.84,INR,Admin,Jane Smith,Reimbursed,INV-8770,-,Carlos Martinez
+2025-01-22,EXP-0120,Meals,Meals related expense,LinkedIn,Credit Card,37357.15,INR,Admin,Jane Smith,Reimbursed,INV-1982,Auto-generated test data,John Smith
+2025-05-24,EXP-0121,Marketing,Marketing related expense,Domino's,UPI,18003.1,INR,Finance,John Doe,Pending,INV-6119,Auto-generated test data,Priya Verma
+2025-05-28,EXP-0122,Supplies,Supplies related expense,BSES,UPI,11600.12,INR,Sales,Ravi Iyer,Reimbursed,INV-7022,-,Meera Iyer
+2025-03-13,EXP-0123,Supplies,Supplies related expense,LinkedIn,Credit Card,30645.25,INR,Admin,John Doe,Paid,INV-5477,Auto-generated test data,John Smith
+2025-03-21,EXP-0124,Marketing,Marketing related expense,Facebook,Credit Card,9479.58,INR,Marketing,David Lin,Reimbursed,INV-7566,-,Meera Iyer
+2025-01-08,EXP-0125,Meals,Meals related expense,Amazon,UPI,21281.71,INR,Admin,Jane Smith,Pending,INV-6105,Auto-generated test data,Priya Verma
+2025-05-26,EXP-0126,Meals,Meals related expense,Indigo Airlines,Cash,8291.79,INR,Engineering,John Doe,Reimbursed,INV-2336,-,Priya Verma
+2025-04-19,EXP-0127,Training,Training related expense,Zoom,UPI,14021.76,INR,Engineering,John Doe,Pending,INV-8043,-,Aisha Khan
+2025-05-05,EXP-0128,Software,Software related expense,Indigo Airlines,Cash,20065.54,INR,Engineering,John Doe,Paid,INV-4349,Auto-generated test data,Arjun Rao
+2025-02-24,EXP-0129,Utilities,Utilities related expense,Google,Bank Transfer,16742.06,INR,Sales,Aisha Khan,Reimbursed,INV-8055,-,Carlos Martinez
+2025-04-08,EXP-0130,Supplies,Supplies related expense,Facebook,Credit Card,20155.02,INR,Sales,Aisha Khan,Paid,INV-8532,Auto-generated test data,Emily Chen
+2025-03-22,EXP-0131,Consulting,Consulting related expense,LinkedIn,UPI,14831.0,INR,Finance,John Doe,Pending,INV-3815,Auto-generated test data,John Smith
+2025-04-28,EXP-0132,Marketing,Marketing related expense,Domino's,UPI,42301.98,INR,Marketing,Aisha Khan,Reimbursed,INV-7560,Auto-generated test data,Aisha Khan
+2025-04-12,EXP-0133,Software,Software related expense,Facebook,Cash,16986.9,INR,Marketing,John Doe,Reimbursed,INV-2868,Auto-generated test data,Aisha Khan
+2025-02-19,EXP-0134,Marketing,Marketing related expense,Facebook,Cash,12195.31,INR,Marketing,Ravi Iyer,Paid,INV-3842,Auto-generated test data,Carlos Martinez
+2025-01-20,EXP-0135,Utilities,Utilities related expense,Zoom,UPI,37845.07,INR,Engineering,Aisha Khan,Reimbursed,INV-6295,Auto-generated test data,Carlos Martinez
+2025-03-22,EXP-0136,Utilities,Utilities related expense,Zoom,Credit Card,23711.59,INR,Admin,Ravi Iyer,Reimbursed,INV-1920,Auto-generated test data,Emily Chen
+2025-01-19,EXP-0137,Software,Software related expense,Zoom,UPI,2361.56,INR,Admin,Ravi Iyer,Paid,INV-2479,Auto-generated test data,Emily Chen
+2025-05-10,EXP-0138,Consulting,Consulting related expense,Zoom,Credit Card,22761.82,INR,Engineering,Jane Smith,Pending,INV-8792,Auto-generated test data,Priya Verma
+2025-01-16,EXP-0139,Training,Training related expense,Domino's,Bank Transfer,49128.09,INR,Sales,David Lin,Reimbursed,INV-3827,-,Emily Chen
+2025-04-23,EXP-0140,Training,Training related expense,BSES,Bank Transfer,18956.17,INR,Admin,Aisha Khan,Pending,INV-6543,Auto-generated test data,Emily Chen
+2025-01-14,EXP-0141,Marketing,Marketing related expense,Domino's,Bank Transfer,5178.04,INR,Finance,Ravi Iyer,Pending,INV-3463,Auto-generated test data,John Smith
+2025-05-30,EXP-0142,Utilities,Utilities related expense,Facebook,Bank Transfer,48400.98,INR,Finance,Jane Smith,Reimbursed,INV-2388,Auto-generated test data,Ravi Sharma
+2025-04-07,EXP-0143,Marketing,Marketing related expense,BSES,Credit Card,32478.23,INR,Finance,David Lin,Pending,INV-1298,Auto-generated test data,Arjun Rao
+2025-02-16,EXP-0144,Supplies,Supplies related expense,Facebook,UPI,10004.26,INR,Marketing,Jane Smith,Paid,INV-5846,Auto-generated test data,Sandeep Menon
+2025-01-26,EXP-0145,Travel,Travel related expense,Facebook,Cash,30063.7,INR,Marketing,Jane Smith,Paid,INV-3712,Auto-generated test data,Emily Chen
+2025-01-12,EXP-0146,Consulting,Consulting related expense,Facebook,Cash,48494.64,INR,Engineering,Ravi Iyer,Reimbursed,INV-8355,-,John Smith
+2025-03-03,EXP-0147,Software,Software related expense,Zoom,Cash,18708.13,INR,Engineering,Aisha Khan,Pending,INV-5616,Auto-generated test data,Rahul Joshi
+2025-05-09,EXP-0148,Consulting,Consulting related expense,BSES,Cash,40162.33,INR,Marketing,Ravi Iyer,Paid,INV-8873,Auto-generated test data,John Smith
+2025-05-22,EXP-0149,Meals,Meals related expense,Domino's,Bank Transfer,4651.82,INR,Marketing,Ravi Iyer,Pending,INV-9410,-,Sandeep Menon
+2025-04-22,EXP-0150,Meals,Meals related expense,Amazon,UPI,44289.17,INR,Sales,Aisha Khan,Paid,INV-7495,Auto-generated test data,Rahul Joshi
+2025-03-02,EXP-0151,Consulting,Consulting related expense,Domino's,Bank Transfer,11614.67,INR,Admin,John Doe,Reimbursed,INV-6493,Auto-generated test data,Ravi Sharma
+2025-02-05,EXP-0152,Travel,Travel related expense,Google,UPI,34955.56,INR,Marketing,Aisha Khan,Pending,INV-1086,Auto-generated test data,Priya Verma
+2025-01-05,EXP-0153,Software,Software related expense,Amazon,Cash,27665.81,INR,Engineering,David Lin,Pending,INV-2821,Auto-generated test data,Priya Verma
+2025-03-02,EXP-0154,Software,Software related expense,Domino's,Credit Card,12302.76,INR,Engineering,Aisha Khan,Paid,INV-2816,Auto-generated test data,Emily Chen
+2025-05-08,EXP-0155,Travel,Travel related expense,Amazon,Cash,14917.96,INR,Sales,David Lin,Pending,INV-4941,Auto-generated test data,Sandeep Menon
+2025-02-17,EXP-0156,Meals,Meals related expense,Facebook,Credit Card,47693.48,INR,Engineering,David Lin,Reimbursed,INV-1333,Auto-generated test data,Aisha Khan
+2025-05-01,EXP-0157,Travel,Travel related expense,LinkedIn,Bank Transfer,13055.69,INR,Sales,Ravi Iyer,Paid,INV-6649,-,Aisha Khan
+2025-01-27,EXP-0158,Marketing,Marketing related expense,BSES,Credit Card,17938.8,INR,Admin,Jane Smith,Reimbursed,INV-8612,Auto-generated test data,Ravi Sharma
+2025-05-03,EXP-0159,Utilities,Utilities related expense,BSES,Credit Card,35944.23,INR,Finance,John Doe,Pending,INV-4302,-,Priya Verma
+2025-02-21,EXP-0160,Travel,Travel related expense,Facebook,Bank Transfer,26011.49,INR,Engineering,Aisha Khan,Pending,INV-1599,Auto-generated test data,John Smith
+2025-02-18,EXP-0161,Software,Software related expense,Facebook,Credit Card,43357.01,INR,Admin,Ravi Iyer,Paid,INV-7029,Auto-generated test data,Sandeep Menon
+2025-04-13,EXP-0162,Training,Training related expense,LinkedIn,Bank Transfer,48699.32,INR,Finance,Aisha Khan,Pending,INV-9507,-,Arjun Rao
+2025-01-22,EXP-0163,Consulting,Consulting related expense,Domino's,UPI,30321.44,INR,Marketing,David Lin,Pending,INV-6262,-,Ravi Sharma
+2025-03-25,EXP-0164,Software,Software related expense,Google,UPI,30329.77,INR,Finance,Jane Smith,Reimbursed,INV-8272,Auto-generated test data,Emily Chen
+2025-01-11,EXP-0165,Marketing,Marketing related expense,LinkedIn,Bank Transfer,32153.73,INR,Sales,John Doe,Reimbursed,INV-7655,Auto-generated test data,Aisha Khan
+2025-02-10,EXP-0166,Travel,Travel related expense,BSES,UPI,2222.55,INR,Sales,Jane Smith,Reimbursed,INV-7001,Auto-generated test data,Arjun Rao
+2025-05-26,EXP-0167,Travel,Travel related expense,BSES,UPI,47466.76,INR,Admin,Aisha Khan,Paid,INV-3255,Auto-generated test data,Rahul Joshi
+2025-04-12,EXP-0168,Marketing,Marketing related expense,Google,Cash,48045.74,INR,Sales,Jane Smith,Pending,INV-9482,Auto-generated test data,Rahul Joshi
+2025-05-24,EXP-0169,Meals,Meals related expense,Google,Bank Transfer,35349.87,INR,Marketing,David Lin,Pending,INV-9047,-,Ravi Sharma
+2025-02-04,EXP-0170,Meals,Meals related expense,Zoom,Cash,44984.61,INR,Finance,John Doe,Reimbursed,INV-6236,Auto-generated test data,Emily Chen
+2025-01-17,EXP-0171,Software,Software related expense,Google,Cash,35734.55,INR,Marketing,Ravi Iyer,Reimbursed,INV-4673,-,Priya Verma
+2025-02-21,EXP-0172,Utilities,Utilities related expense,Amazon,UPI,1801.06,INR,Engineering,David Lin,Pending,INV-8657,Auto-generated test data,Meera Iyer
+2025-05-22,EXP-0173,Utilities,Utilities related expense,Domino's,Credit Card,318569.69,INR,Finance,David Lin,Pending,INV-7708,Suspiciously large amount,Priya Verma
+2025-01-19,EXP-0174,Utilities,Utilities related expense,Facebook,Credit Card,22773.74,INR,Engineering,Ravi Iyer,Paid,INV-3981,Auto-generated test data,Arjun Rao
+2025-02-03,EXP-0175,Consulting,Consulting related expense,Indigo Airlines,Credit Card,26146.06,INR,Admin,Jane Smith,Paid,INV-6286,Auto-generated test data,Meera Iyer
+2025-02-27,EXP-0176,Marketing,Marketing related expense,Google,Credit Card,12904.96,INR,Engineering,Ravi Iyer,Paid,INV-5961,Auto-generated test data,Rahul Joshi
+2025-01-24,EXP-0177,Utilities,Utilities related expense,BSES,Cash,33107.28,INR,Engineering,Ravi Iyer,Reimbursed,INV-1674,Auto-generated test data,John Smith
+2025-01-08,EXP-0178,Meals,Meals related expense,Indigo Airlines,Bank Transfer,32730.93,INR,Engineering,Aisha Khan,Reimbursed,INV-1496,Auto-generated test data,Sandeep Menon
+2025-05-20,EXP-0179,Software,Software related expense,Google,UPI,12621.46,INR,Finance,Ravi Iyer,Pending,INV-2195,Auto-generated test data,Ravi Sharma
+2025-02-10,EXP-0180,Training,Training related expense,LinkedIn,UPI,23489.89,INR,Admin,David Lin,Paid,INV-6121,Auto-generated test data,Carlos Martinez
+2025-03-23,EXP-0181,Marketing,Marketing related expense,LinkedIn,Cash,38152.92,INR,Engineering,David Lin,Paid,INV-6228,-,John Smith
+2025-02-01,EXP-0182,Software,Software related expense,Zoom,Cash,7473.44,INR,Sales,Ravi Iyer,Pending,INV-7850,-,Meera Iyer
+2025-02-10,EXP-0183,Marketing,Marketing related expense,Facebook,Cash,38274.51,INR,Finance,David Lin,Pending,INV-9171,Auto-generated test data,Ravi Sharma
+2025-05-08,EXP-0184,Travel,Travel related expense,Domino's,UPI,124044.02,INR,Marketing,Jane Smith,Reimbursed,INV-6781,Suspiciously large amount,Arjun Rao
+2025-03-14,EXP-0185,Training,Training related expense,Zoom,Bank Transfer,27066.19,INR,Sales,Aisha Khan,Paid,INV-5333,Auto-generated test data,Priya Verma
+2025-04-14,EXP-0186,Marketing,Marketing related expense,Indigo Airlines,UPI,3032.31,INR,Engineering,Jane Smith,Pending,INV-5728,-,John Smith
+2025-05-10,EXP-0187,Training,Training related expense,Google,Credit Card,6868.84,INR,Sales,Aisha Khan,Pending,INV-6555,Auto-generated test data,Arjun Rao
+2025-04-04,EXP-0188,Utilities,Utilities related expense,Amazon,UPI,25253.86,INR,Sales,John Doe,Paid,INV-6456,Auto-generated test data,Ravi Sharma
+2025-05-13,EXP-0189,Training,Training related expense,BSES,Cash,16734.31,INR,Engineering,Ravi Iyer,Paid,INV-7438,Auto-generated test data,Rahul Joshi
+2025-03-18,EXP-0190,Marketing,Marketing related expense,Zoom,Bank Transfer,24007.18,INR,Sales,Ravi Iyer,Pending,INV-2795,Auto-generated test data,Ravi Sharma
+2025-05-30,EXP-0191,Software,Software related expense,Indigo Airlines,UPI,13643.76,INR,Engineering,David Lin,Paid,INV-1841,Auto-generated test data,Aisha Khan
+2025-02-13,EXP-0192,Consulting,Consulting related expense,BSES,Cash,2062.74,INR,Sales,Jane Smith,Paid,INV-8225,Auto-generated test data,Carlos Martinez
+2025-02-08,EXP-0193,Consulting,Consulting related expense,Amazon,UPI,25340.07,INR,Engineering,Aisha Khan,Reimbursed,INV-2020,Auto-generated test data,Arjun Rao
+2025-05-13,EXP-0194,Supplies,Supplies related expense,Facebook,UPI,26511.12,INR,Admin,Jane Smith,Pending,INV-9734,Auto-generated test data,Emily Chen
+2025-04-01,EXP-0195,Software,Software related expense,Zoom,Cash,47888.2,INR,Admin,David Lin,Pending,INV-4684,Auto-generated test data,Aisha Khan
+2025-03-18,EXP-0196,Software,Software related expense,Amazon,UPI,16193.52,INR,Admin,David Lin,Reimbursed,INV-5480,-,Ravi Sharma
+2025-05-27,EXP-0197,Consulting,Consulting related expense,LinkedIn,Bank Transfer,47753.14,INR,Marketing,Ravi Iyer,Paid,INV-5712,Auto-generated test data,Arjun Rao
+2025-01-21,EXP-0198,Marketing,Marketing related expense,Zoom,Bank Transfer,37493.26,INR,Marketing,Jane Smith,Reimbursed,INV-5442,Auto-generated test data,Carlos Martinez
+2025-03-11,EXP-0199,Utilities,Utilities related expense,Domino's,Cash,12501.67,INR,Engineering,Jane Smith,Reimbursed,INV-4814,-,Priya Verma
+2025-04-16,EXP-0200,Marketing,Marketing related expense,Zoom,Credit Card,34219.0,INR,Marketing,John Doe,Reimbursed,INV-3587,Auto-generated test data,Carlos Martinez
+2025-05-02,EXP-0201,Training,Training related expense,Amazon,Bank Transfer,16397.8,INR,Sales,John Doe,Reimbursed,INV-4804,Auto-generated test data,Meera Iyer
+2025-01-10,EXP-0202,Utilities,Utilities related expense,LinkedIn,Cash,46729.17,INR,Sales,Aisha Khan,Pending,INV-4052,Auto-generated test data,Aisha Khan
+2025-03-16,EXP-0203,Travel,Travel related expense,Indigo Airlines,Bank Transfer,28614.11,INR,Sales,Ravi Iyer,Pending,INV-8444,Auto-generated test data,Emily Chen
+2025-05-20,EXP-0204,Training,Training related expense,BSES,UPI,14005.44,INR,Sales,Ravi Iyer,Paid,INV-8518,Auto-generated test data,Rahul Joshi
+2025-02-17,EXP-0205,Travel,Travel related expense,Facebook,Bank Transfer,28605.17,INR,Marketing,Jane Smith,Reimbursed,INV-7643,Auto-generated test data,John Smith
+2025-05-12,EXP-0206,Marketing,Marketing related expense,Domino's,UPI,174566.95,INR,Marketing,Jane Smith,Pending,INV-6301,Suspiciously large amount,Meera Iyer
+2025-01-02,EXP-0207,Software,Software related expense,LinkedIn,Cash,22613.41,INR,Admin,Ravi Iyer,Pending,INV-1187,-,Meera Iyer
+2025-04-03,EXP-0208,Supplies,Supplies related expense,Indigo Airlines,Credit Card,23537.05,INR,Marketing,Aisha Khan,Reimbursed,INV-9233,Auto-generated test data,Rahul Joshi
+2025-03-21,EXP-0209,Meals,Meals related expense,Google,Bank Transfer,30923.96,INR,Marketing,Jane Smith,Pending,INV-3509,Auto-generated test data,Meera Iyer
+2025-04-06,EXP-0210,Consulting,Consulting related expense,Zoom,Cash,38212.05,INR,Engineering,John Doe,Reimbursed,INV-8319,Auto-generated test data,Ravi Sharma
+2025-04-03,EXP-0211,Meals,Meals related expense,Domino's,Credit Card,41524.32,INR,Engineering,Jane Smith,Reimbursed,INV-9792,-,Ravi Sharma
+2025-03-25,EXP-0212,Training,Training related expense,Domino's,Cash,35987.44,INR,Finance,John Doe,Reimbursed,INV-8298,Auto-generated test data,Priya Verma
+2026-02-13,EXP-0213,Utilities,Utilities related expense,LinkedIn,UPI,28413.6,INR,Engineering,Aisha Khan,Reimbursed,INV-6049,Future-dated expense,Meera Iyer
+2025-04-12,EXP-0214,Software,Software related expense,Indigo Airlines,Cash,29126.41,INR,Sales,Aisha Khan,Pending,INV-2044,Auto-generated test data,Rahul Joshi
+2025-01-16,EXP-0215,Meals,Meals related expense,Zoom,Credit Card,14710.99,INR,Marketing,Jane Smith,Reimbursed,INV-7887,Auto-generated test data,Carlos Martinez
+2025-04-08,EXP-0216,Training,Training related expense,LinkedIn,UPI,4472.37,INR,Engineering,Jane Smith,Reimbursed,INV-6697,-,Sandeep Menon
+2025-05-18,EXP-0217,Consulting,Consulting related expense,BSES,Cash,41823.67,INR,Sales,Ravi Iyer,Pending,INV-9920,Auto-generated test data,Ravi Sharma
+2025-04-08,EXP-0218,Supplies,Supplies related expense,Amazon,UPI,17634.91,INR,Admin,Jane Smith,Reimbursed,INV-2848,-,Emily Chen
+2026-03-23,EXP-0219,Travel,Travel related expense,Amazon,Cash,3830.9,INR,Engineering,John Doe,Pending,INV-1797,Future-dated expense,Emily Chen
+2025-01-12,EXP-0220,Consulting,Consulting related expense,Zoom,Cash,27218.11,INR,Sales,Jane Smith,Reimbursed,INV-5739,-,Arjun Rao
+2025-05-28,EXP-0221,Marketing,Marketing related expense,Facebook,Cash,15437.34,INR,Marketing,David Lin,Paid,INV-7775,Auto-generated test data,Priya Verma
+2025-01-16,EXP-0222,Utilities,Utilities related expense,LinkedIn,UPI,2820.76,INR,Admin,Aisha Khan,Reimbursed,INV-6222,Auto-generated test data,Meera Iyer
+2025-04-15,EXP-0223,Utilities,Utilities related expense,Google,UPI,9602.01,INR,Engineering,Aisha Khan,Paid,INV-4692,Auto-generated test data,Arjun Rao
+2025-02-06,EXP-0224,Training,Training related expense,Indigo Airlines,UPI,48405.42,INR,Engineering,David Lin,Paid,INV-7363,-,Ravi Sharma
+2025-02-22,EXP-0225,Marketing,Marketing related expense,Domino's,UPI,42433.1,INR,Sales,David Lin,Reimbursed,INV-4120,-,Arjun Rao
+2025-04-07,EXP-0226,Travel,Travel related expense,Domino's,Cash,40330.21,INR,Engineering,David Lin,Paid,INV-8854,-,Carlos Martinez
+2025-03-27,EXP-0227,Software,Software related expense,Indigo Airlines,Cash,46889.41,INR,Sales,Aisha Khan,Paid,INV-4350,Auto-generated test data,Ravi Sharma
+2025-03-03,EXP-0228,Marketing,Marketing related expense,Google,UPI,23579.4,INR,Admin,Ravi Iyer,Pending,INV-6892,Auto-generated test data,Meera Iyer
+2025-05-08,EXP-0229,Training,Training related expense,Domino's,UPI,38200.63,INR,Admin,Jane Smith,Pending,INV-6126,Auto-generated test data,Arjun Rao
+2025-05-25,EXP-0230,Supplies,Supplies related expense,BSES,Credit Card,13408.32,INR,Engineering,David Lin,Reimbursed,INV-7841,-,Priya Verma
+2025-02-20,EXP-0231,Marketing,Marketing related expense,Amazon,UPI,28704.58,INR,Marketing,Aisha Khan,Reimbursed,INV-6530,-,Sandeep Menon
+2025-05-06,EXP-0232,Training,Training related expense,Zoom,Cash,36772.23,INR,Admin,Jane Smith,Paid,INV-9954,Auto-generated test data,Emily Chen
+2025-05-19,EXP-0233,Travel,Travel related expense,Indigo Airlines,Credit Card,47286.81,INR,Sales,John Doe,Pending,INV-3252,Auto-generated test data,Carlos Martinez
+2025-03-01,EXP-0234,Meals,Meals related expense,BSES,Credit Card,11326.62,INR,Finance,Ravi Iyer,Paid,INV-8916,Auto-generated test data,Sandeep Menon
+2025-01-05,EXP-0235,Travel,Travel related expense,,Credit Card,1327.94,INR,Admin,David Lin,Pending,INV-1280,Vendor information missing,Aisha Khan
+2025-04-21,EXP-0236,Utilities,Utilities related expense,Domino's,Credit Card,26457.08,INR,Marketing,Jane Smith,Reimbursed,INV-9625,-,Carlos Martinez
+2025-04-01,EXP-0237,Software,Software related expense,LinkedIn,Credit Card,18966.05,INR,Finance,Aisha Khan,Reimbursed,INV-4984,Auto-generated test data,Meera Iyer
+2025-02-27,EXP-0238,Software,Software related expense,Domino's,Credit Card,5128.28,INR,Finance,Aisha Khan,Reimbursed,INV-8798,-,John Smith
+2025-01-03,EXP-0239,Utilities,Utilities related expense,Domino's,UPI,42343.82,INR,Admin,David Lin,Paid,INV-9653,Auto-generated test data,Priya Verma
+2025-02-28,EXP-0240,Supplies,Supplies related expense,Zoom,Bank Transfer,2804.82,INR,Sales,Ravi Iyer,Reimbursed,INV-1539,-,Carlos Martinez
+2025-03-22,EXP-0241,Travel,Travel related expense,Amazon,Cash,37736.6,INR,Finance,John Doe,Pending,INV-3661,Auto-generated test data,Priya Verma
+2025-05-26,EXP-0242,Consulting,Consulting related expense,Facebook,UPI,37902.66,INR,Marketing,John Doe,Reimbursed,INV-6666,-,John Smith
+2025-04-22,EXP-0243,Supplies,Supplies related expense,Domino's,Bank Transfer,30455.85,INR,Engineering,David Lin,Pending,INV-6347,-,Sandeep Menon
+2025-03-11,EXP-0244,Training,Training related expense,Zoom,Cash,18112.65,INR,Finance,Aisha Khan,Paid,INV-7227,-,Carlos Martinez
+2025-03-17,EXP-0245,Supplies,Supplies related expense,Domino's,Credit Card,13764.62,INR,Finance,Jane Smith,Reimbursed,INV-7383,Auto-generated test data,Arjun Rao
+2025-01-28,EXP-0246,Meals,Meals related expense,Indigo Airlines,Bank Transfer,22514.43,INR,Admin,John Doe,Paid,INV-2430,-,John Smith
+2025-04-25,EXP-0247,Consulting,Consulting related expense,Domino's,Credit Card,4936.13,INR,Engineering,John Doe,Reimbursed,INV-6315,Auto-generated test data,Emily Chen
+2025-01-04,EXP-0248,Software,Software related expense,LinkedIn,UPI,39068.87,INR,Engineering,Jane Smith,Reimbursed,INV-9537,-,Rahul Joshi
+2025-04-08,EXP-0249,Utilities,Utilities related expense,BSES,Bank Transfer,15406.0,INR,Finance,Jane Smith,Paid,INV-3739,Auto-generated test data,Meera Iyer
+2025-04-18,EXP-0250,Software,Software related expense,Zoom,Credit Card,18375.68,INR,Marketing,Aisha Khan,Reimbursed,INV-4203,Auto-generated test data,Sandeep Menon
+2025-02-04,EXP-0251,Software,Software related expense,Indigo Airlines,UPI,16944.75,INR,Engineering,Aisha Khan,Pending,INV-8212,Auto-generated test data,Priya Verma
+2025-02-04,EXP-0252,Software,Software related expense,Facebook,Cash,24210.98,INR,Marketing,Aisha Khan,Pending,INV-5775,Auto-generated test data,Sandeep Menon
+2025-05-06,EXP-0253,Supplies,Supplies related expense,Facebook,UPI,14374.86,INR,Finance,Ravi Iyer,Paid,INV-4273,Auto-generated test data,John Smith
+2025-05-20,EXP-0254,Utilities,Utilities related expense,Indigo Airlines,UPI,47177.26,INR,Marketing,Aisha Khan,Pending,INV-2133,Auto-generated test data,Meera Iyer
+2025-04-15,EXP-0255,Training,Training related expense,BSES,Bank Transfer,12480.05,INR,Marketing,Aisha Khan,Pending,INV-2211,Auto-generated test data,Priya Verma
+2025-05-03,EXP-0256,Consulting,Consulting related expense,LinkedIn,Credit Card,39640.69,INR,Admin,David Lin,Reimbursed,INV-2392,-,Sandeep Menon
+2025-03-05,EXP-0257,Marketing,Marketing related expense,BSES,Credit Card,28379.4,INR,Finance,Ravi Iyer,Pending,INV-2735,-,Arjun Rao
+2025-03-08,EXP-0258,Supplies,Supplies related expense,Amazon,UPI,19018.92,INR,Finance,David Lin,Reimbursed,INV-9199,-,Meera Iyer
+2026-04-10,EXP-0259,Training,Training related expense,Domino's,Bank Transfer,21090.78,INR,Sales,John Doe,Reimbursed,INV-3321,Future-dated expense,Sandeep Menon
+2025-03-29,EXP-0260,Training,Training related expense,Amazon,UPI,17740.86,INR,Sales,Aisha Khan,Reimbursed,INV-8412,Auto-generated test data,Sandeep Menon
+2025-03-18,EXP-0261,Travel,Travel related expense,Domino's,Credit Card,42534.41,INR,Sales,Jane Smith,Reimbursed,INV-4996,Auto-generated test data,John Smith
+2025-05-22,EXP-0262,Utilities,Utilities related expense,Facebook,UPI,47943.9,INR,Marketing,Aisha Khan,Reimbursed,INV-4022,-,Sandeep Menon
+2025-04-21,EXP-0263,Consulting,Consulting related expense,Indigo Airlines,Cash,22753.96,INR,Finance,Aisha Khan,Paid,INV-4519,-,Emily Chen
+2025-01-17,EXP-0264,Meals,Meals related expense,BSES,Bank Transfer,16636.25,INR,Finance,John Doe,Pending,INV-9019,Auto-generated test data,Aisha Khan
+2025-03-22,EXP-0265,Consulting,Consulting related expense,LinkedIn,Credit Card,17722.27,INR,Finance,David Lin,Paid,INV-5873,Auto-generated test data,Meera Iyer
+2025-01-22,EXP-0266,Utilities,Utilities related expense,Facebook,Credit Card,12309.35,INR,Sales,Jane Smith,Pending,INV-3316,Auto-generated test data,Meera Iyer
+2025-04-18,EXP-0267,Utilities,Utilities related expense,LinkedIn,UPI,9694.81,INR,Engineering,Jane Smith,Reimbursed,INV-3733,Auto-generated test data,Aisha Khan
+2025-02-05,EXP-0268,Utilities,Utilities related expense,Facebook,UPI,31160.79,INR,Admin,John Doe,Pending,INV-3236,-,Sandeep Menon
+2025-04-09,EXP-0269,Training,Training related expense,LinkedIn,UPI,21073.71,INR,Finance,Aisha Khan,Paid,INV-2354,Auto-generated test data,Emily Chen
+2025-02-26,EXP-0270,Software,Software related expense,Indigo Airlines,Bank Transfer,11629.75,INR,Admin,Jane Smith,Pending,INV-9115,Auto-generated test data,Sandeep Menon
+2025-01-29,EXP-0271,Meals,Meals related expense,Google,Bank Transfer,27331.15,INR,Sales,Aisha Khan,Reimbursed,INV-4580,Auto-generated test data,Ravi Sharma
+2025-01-27,EXP-0272,Supplies,Supplies related expense,Google,Credit Card,22761.75,INR,Admin,John Doe,Pending,INV-2923,Auto-generated test data,Emily Chen
+2025-03-02,EXP-0273,Supplies,Supplies related expense,Facebook,UPI,8716.09,INR,Marketing,Jane Smith,Paid,INV-1972,Auto-generated test data,Carlos Martinez
+2026-02-27,EXP-0274,Software,Software related expense,BSES,Bank Transfer,48960.51,INR,Admin,Ravi Iyer,Reimbursed,INV-5380,Future-dated expense,Carlos Martinez
+2025-05-12,EXP-0275,Meals,Meals related expense,BSES,UPI,45979.05,INR,Admin,Jane Smith,Reimbursed,INV-3174,-,Arjun Rao
+2025-03-24,EXP-0276,Supplies,Supplies related expense,LinkedIn,UPI,7537.5,INR,Admin,Aisha Khan,Pending,INV-8405,-,Sandeep Menon
+2025-01-24,EXP-0277,Consulting,Consulting related expense,Google,Bank Transfer,23007.43,INR,Finance,Ravi Iyer,Reimbursed,INV-1040,Auto-generated test data,Priya Verma
+2025-01-24,EXP-0278,Training,Training related expense,Facebook,Credit Card,39886.06,INR,Finance,Jane Smith,Pending,INV-4470,Auto-generated test data,Aisha Khan
+2025-03-24,EXP-0279,Software,Software related expense,Facebook,Cash,28524.03,INR,Finance,Ravi Iyer,Reimbursed,INV-1793,-,Sandeep Menon
+2025-04-28,EXP-0280,Travel,Travel related expense,Domino's,Cash,22343.65,INR,Sales,Aisha Khan,Paid,INV-3161,Auto-generated test data,Sandeep Menon
+2025-03-19,EXP-0281,Utilities,Utilities related expense,Google,Credit Card,32902.1,INR,Admin,John Doe,Pending,INV-3711,-,Ravi Sharma
+2025-03-20,EXP-0282,Supplies,Supplies related expense,,Credit Card,35333.05,INR,Sales,Jane Smith,Pending,INV-2276,Vendor information missing,John Smith
+2025-02-27,EXP-0283,Training,Training related expense,Indigo Airlines,Credit Card,34932.06,INR,Sales,Aisha Khan,Reimbursed,INV-3165,Auto-generated test data,Arjun Rao
+2025-02-28,EXP-0284,Consulting,Consulting related expense,Domino's,Credit Card,5608.48,INR,Admin,Ravi Iyer,Paid,INV-7270,Auto-generated test data,John Smith
+2025-02-04,EXP-0285,Utilities,Utilities related expense,Domino's,Credit Card,30710.8,INR,Marketing,Aisha Khan,Pending,INV-4490,Auto-generated test data,John Smith
+2025-02-08,EXP-0286,Consulting,Consulting related expense,Zoom,Cash,4791.06,INR,Sales,Jane Smith,Paid,INV-7291,Auto-generated test data,John Smith
+2025-04-20,EXP-0287,Marketing,Marketing related expense,BSES,Cash,14209.9,INR,Sales,Jane Smith,Reimbursed,INV-5668,Auto-generated test data,Priya Verma
+2025-01-07,EXP-0288,Software,Software related expense,Amazon,Cash,37518.26,INR,Admin,John Doe,Paid,INV-9108,Auto-generated test data,John Smith
+2025-03-03,EXP-0289,Training,Training related expense,Domino's,Credit Card,49350.69,INR,Admin,Jane Smith,Pending,INV-7895,Auto-generated test data,Priya Verma
+2025-02-14,EXP-0290,Training,Training related expense,Domino's,Credit Card,29574.49,INR,Sales,Ravi Iyer,Paid,INV-1652,Auto-generated test data,Priya Verma
+2025-04-12,EXP-0291,Software,Software related expense,LinkedIn,UPI,35239.63,INR,Sales,David Lin,Reimbursed,INV-3501,-,Ravi Sharma
+2025-03-21,EXP-0292,Meals,Meals related expense,Amazon,Cash,27051.31,INR,Finance,David Lin,Reimbursed,INV-2083,Auto-generated test data,Emily Chen
+2025-04-22,EXP-0293,Supplies,Supplies related expense,Indigo Airlines,Cash,4767.53,INR,Finance,John Doe,Pending,INV-1901,Auto-generated test data,Aisha Khan
+2025-02-14,EXP-0294,Meals,Meals related expense,Indigo Airlines,Cash,35224.23,INR,Marketing,Aisha Khan,Pending,INV-9568,Auto-generated test data,Rahul Joshi
+2025-03-08,EXP-0295,Utilities,Utilities related expense,Facebook,Cash,37613.93,INR,Admin,John Doe,Paid,INV-6488,Auto-generated test data,Sandeep Menon
+2025-03-11,EXP-0296,Meals,Meals related expense,,Credit Card,25059.3,INR,Engineering,Ravi Iyer,Paid,INV-9185,Vendor information missing,Meera Iyer
+2025-02-12,EXP-0297,Marketing,Marketing related expense,BSES,Bank Transfer,38779.78,INR,Engineering,John Doe,Paid,INV-9336,-,Rahul Joshi
+2025-01-04,EXP-0298,Supplies,Supplies related expense,Indigo Airlines,UPI,18516.84,INR,Marketing,Jane Smith,Paid,INV-7870,-,Emily Chen
+2025-03-05,EXP-0299,Consulting,Consulting related expense,Facebook,Bank Transfer,41386.85,INR,Engineering,Ravi Iyer,Paid,INV-9225,Auto-generated test data,Sandeep Menon
+2025-01-14,EXP-0300,Utilities,Utilities related expense,Amazon,Credit Card,47726.93,INR,Sales,Aisha Khan,Pending,INV-6090,Auto-generated test data,Carlos Martinez
+2025-05-22,EXP-0301,Training,Training related expense,Indigo Airlines,Bank Transfer,10433.22,INR,Engineering,Ravi Iyer,Reimbursed,INV-4974,Auto-generated test data,Rahul Joshi
+2025-05-07,EXP-0302,Supplies,Supplies related expense,Amazon,Cash,815.71,INR,Finance,John Doe,Paid,INV-9872,Auto-generated test data,Rahul Joshi
+2025-01-03,EXP-0303,Marketing,Marketing related expense,Indigo Airlines,UPI,42525.8,INR,Admin,John Doe,Paid,INV-9680,Auto-generated test data,Sandeep Menon
+2025-04-18,EXP-0304,Training,Training related expense,Indigo Airlines,Cash,35726.8,INR,Sales,John Doe,Paid,INV-9515,Auto-generated test data,Sandeep Menon
+2025-04-06,EXP-0305,Training,Training related expense,Domino's,Credit Card,25518.67,INR,Finance,John Doe,Reimbursed,INV-2020,Auto-generated test data,Priya Verma
+2025-02-03,EXP-0306,Supplies,Supplies related expense,Google,Bank Transfer,42620.23,INR,Finance,Ravi Iyer,Pending,INV-8417,-,Priya Verma
+2025-01-20,EXP-0307,Supplies,Supplies related expense,BSES,Credit Card,8192.82,INR,Marketing,Aisha Khan,Pending,INV-6145,Auto-generated test data,Ravi Sharma
+2025-05-18,EXP-0308,Marketing,Marketing related expense,Amazon,UPI,470174.03,INR,Admin,John Doe,Paid,INV-3582,Suspiciously large amount,Carlos Martinez
+2025-03-19,EXP-0309,Travel,Travel related expense,Amazon,Bank Transfer,7842.03,INR,Marketing,Ravi Iyer,Pending,INV-9412,-,Carlos Martinez
+2025-03-18,EXP-0310,Software,Software related expense,BSES,Credit Card,47628.78,INR,Finance,David Lin,Reimbursed,INV-5093,-,Priya Verma
+2025-01-27,EXP-0311,Utilities,Utilities related expense,Domino's,Credit Card,3552.62,INR,Marketing,Jane Smith,Paid,INV-7563,Auto-generated test data,Priya Verma
+2025-01-22,EXP-0312,Software,Software related expense,Domino's,Credit Card,49859.49,INR,Marketing,Aisha Khan,Paid,INV-2506,Auto-generated test data,Priya Verma
+2025-03-26,EXP-0313,Meals,Meals related expense,Indigo Airlines,UPI,3006.57,INR,Engineering,Aisha Khan,Reimbursed,INV-7471,Auto-generated test data,Aisha Khan
+2025-04-08,EXP-0314,Consulting,Consulting related expense,BSES,Bank Transfer,11128.45,INR,Marketing,Ravi Iyer,Pending,INV-8307,Auto-generated test data,Sandeep Menon
+2025-01-09,EXP-0315,Supplies,Supplies related expense,Google,UPI,20893.61,INR,Engineering,Aisha Khan,Paid,INV-2437,-,Rahul Joshi
+2025-02-05,EXP-0316,Consulting,Consulting related expense,Amazon,Cash,31722.34,INR,Engineering,John Doe,Pending,INV-6883,Auto-generated test data,John Smith
+2025-05-05,EXP-0317,Marketing,Marketing related expense,Facebook,UPI,13886.57,INR,Sales,Ravi Iyer,Reimbursed,INV-4588,-,Rahul Joshi
+2025-03-13,EXP-0318,Travel,Travel related expense,Zoom,Bank Transfer,38458.69,INR,Marketing,Jane Smith,Paid,INV-5060,Auto-generated test data,Emily Chen
+2025-03-10,EXP-0319,Travel,Travel related expense,Amazon,UPI,18062.83,INR,Marketing,Jane Smith,Paid,INV-6210,Auto-generated test data,Rahul Joshi
+2025-04-02,EXP-0320,Travel,Travel related expense,Facebook,Cash,28373.89,INR,Marketing,Aisha Khan,Reimbursed,INV-6063,-,Priya Verma
+2025-01-10,EXP-0321,Meals,Meals related expense,Indigo Airlines,Cash,30282.31,INR,Sales,David Lin,Pending,INV-1011,Auto-generated test data,Carlos Martinez
+2025-02-21,EXP-0322,Utilities,Utilities related expense,Facebook,Cash,45979.65,INR,Admin,John Doe,Paid,INV-3420,Auto-generated test data,Carlos Martinez
+2025-02-06,EXP-0323,Meals,Meals related expense,Facebook,Credit Card,18992.74,INR,Finance,David Lin,Paid,INV-6514,Auto-generated test data,Ravi Sharma
+2025-02-04,EXP-0324,Utilities,Utilities related expense,LinkedIn,UPI,32634.42,INR,Marketing,David Lin,Reimbursed,INV-6846,-,John Smith
+2025-05-31,EXP-0325,Utilities,Utilities related expense,LinkedIn,Bank Transfer,36832.75,INR,Admin,Jane Smith,Paid,INV-1029,Auto-generated test data,Carlos Martinez
+2025-05-27,EXP-0326,Consulting,Consulting related expense,Indigo Airlines,Cash,30318.24,INR,Engineering,Jane Smith,Reimbursed,INV-2705,Auto-generated test data,Emily Chen
+2025-02-06,EXP-0327,Marketing,Marketing related expense,,Cash,17667.1,INR,Admin,Jane Smith,Reimbursed,INV-2453,Vendor information missing,Carlos Martinez
+2025-03-27,EXP-0328,Training,Training related expense,Indigo Airlines,Bank Transfer,10879.37,INR,Sales,Ravi Iyer,Pending,INV-2770,Auto-generated test data,John Smith
+2025-01-13,EXP-0329,Consulting,Consulting related expense,Zoom,UPI,48470.54,INR,Finance,Aisha Khan,Pending,INV-6754,Auto-generated test data,John Smith
+2025-01-26,EXP-0330,Training,Training related expense,Amazon,Cash,22838.73,INR,Sales,Ravi Iyer,Paid,INV-6221,-,Meera Iyer
+2025-01-27,EXP-0331,Meals,Meals related expense,Facebook,Cash,44452.6,INR,Marketing,John Doe,Reimbursed,INV-2525,Auto-generated test data,Meera Iyer
+2025-05-04,EXP-0332,Travel,Travel related expense,LinkedIn,Cash,30562.22,INR,Finance,Jane Smith,Paid,INV-2659,Auto-generated test data,Ravi Sharma
+2025-02-18,EXP-0333,Consulting,Consulting related expense,Google,Bank Transfer,15221.33,INR,Sales,John Doe,Pending,INV-9043,-,Meera Iyer
+2025-04-03,EXP-0334,Travel,Travel related expense,LinkedIn,Credit Card,15080.2,INR,Engineering,Aisha Khan,Paid,INV-2589,-,Aisha Khan
+2025-02-13,EXP-0335,Software,Software related expense,Domino's,UPI,42266.57,INR,Admin,Aisha Khan,Pending,INV-9013,Auto-generated test data,Rahul Joshi
+2025-03-09,EXP-0336,Meals,Meals related expense,LinkedIn,Cash,18865.52,INR,Finance,Ravi Iyer,Paid,INV-8303,-,Rahul Joshi
+2025-04-23,EXP-0337,Training,Training related expense,Google,Cash,307481.06,INR,Engineering,John Doe,Paid,INV-2584,Suspiciously large amount,Ravi Sharma
+2025-03-30,EXP-0338,Consulting,Consulting related expense,Amazon,Credit Card,42119.46,INR,Engineering,Aisha Khan,Reimbursed,INV-8779,Auto-generated test data,Carlos Martinez
+2025-03-02,EXP-0339,Training,Training related expense,Google,Credit Card,20042.82,INR,Sales,David Lin,Reimbursed,INV-9467,Auto-generated test data,Ravi Sharma
+2025-02-07,EXP-0340,Meals,Meals related expense,Zoom,Cash,47478.54,INR,Marketing,Jane Smith,Paid,INV-3067,-,Meera Iyer
+2025-01-21,EXP-0341,Consulting,Consulting related expense,,Cash,41788.35,INR,Admin,Ravi Iyer,Reimbursed,INV-2097,Vendor information missing,Carlos Martinez
+2025-05-23,EXP-0342,Consulting,Consulting related expense,Facebook,Bank Transfer,26224.56,INR,Sales,David Lin,Reimbursed,INV-9561,Auto-generated test data,Ravi Sharma
+2025-01-29,EXP-0343,Consulting,Consulting related expense,BSES,Cash,28546.4,INR,Engineering,John Doe,Paid,INV-2654,Auto-generated test data,Priya Verma
+2025-05-18,EXP-0344,Marketing,Marketing related expense,LinkedIn,Bank Transfer,19460.65,INR,Finance,David Lin,Reimbursed,INV-8750,-,Arjun Rao
+2025-03-12,EXP-0345,Consulting,Consulting related expense,BSES,UPI,2419.74,INR,Admin,Jane Smith,Paid,INV-8785,Auto-generated test data,Rahul Joshi
+2026-04-11,EXP-0346,Travel,Travel related expense,Facebook,Bank Transfer,15891.99,INR,Finance,John Doe,Paid,INV-3201,Future-dated expense,Carlos Martinez
+2025-04-24,EXP-0347,Marketing,Marketing related expense,Google,UPI,30446.47,INR,Sales,Jane Smith,Pending,INV-4463,Auto-generated test data,Arjun Rao
+2025-04-15,EXP-0348,Training,Training related expense,Facebook,Credit Card,26005.85,INR,Marketing,John Doe,Pending,INV-9303,Auto-generated test data,Rahul Joshi
+2025-05-15,EXP-0349,Travel,Travel related expense,BSES,Cash,43821.44,INR,Marketing,John Doe,Paid,INV-1541,Auto-generated test data,Sandeep Menon
+2025-04-03,EXP-0350,Supplies,Supplies related expense,Google,Bank Transfer,41263.56,INR,Engineering,Aisha Khan,Reimbursed,INV-3029,Auto-generated test data,Carlos Martinez
+2025-03-03,EXP-0351,Marketing,Marketing related expense,Zoom,UPI,9290.39,INR,Finance,David Lin,Reimbursed,INV-6730,Auto-generated test data,Arjun Rao
+2025-03-08,EXP-0352,Meals,Meals related expense,Google,Credit Card,19635.0,INR,Marketing,David Lin,Paid,INV-4626,Auto-generated test data,John Smith
+2025-02-22,EXP-0353,Software,Software related expense,LinkedIn,Credit Card,43299.18,INR,Sales,Aisha Khan,Paid,INV-3837,Auto-generated test data,Ravi Sharma
+2025-01-03,EXP-0354,Supplies,Supplies related expense,Google,Bank Transfer,35780.65,INR,Admin,Aisha Khan,Pending,INV-6713,Auto-generated test data,Meera Iyer
+2025-02-25,EXP-0355,Training,Training related expense,Google,UPI,29432.11,INR,Sales,David Lin,Reimbursed,INV-7131,Auto-generated test data,Sandeep Menon
+2025-03-14,EXP-0356,Software,Software related expense,Domino's,UPI,3659.93,INR,Admin,Ravi Iyer,Pending,INV-5278,Auto-generated test data,Rahul Joshi
+2025-03-18,EXP-0357,Supplies,Supplies related expense,BSES,Cash,45034.51,INR,Engineering,Aisha Khan,Reimbursed,INV-6236,Auto-generated test data,Rahul Joshi
+2025-01-07,EXP-0358,Training,Training related expense,Google,Bank Transfer,45392.12,INR,Finance,Aisha Khan,Reimbursed,INV-1578,Auto-generated test data,Aisha Khan
+2025-05-27,EXP-0359,Supplies,Supplies related expense,Facebook,Cash,34472.75,INR,Finance,Ravi Iyer,Reimbursed,INV-5918,Auto-generated test data,Meera Iyer
+2025-05-23,EXP-0360,Utilities,Utilities related expense,Google,Credit Card,411492.46,INR,Admin,David Lin,Paid,INV-6499,Suspiciously large amount,Aisha Khan
+2025-02-26,EXP-0361,Marketing,Marketing related expense,Amazon,Bank Transfer,21313.39,INR,Admin,Ravi Iyer,Pending,INV-5817,Auto-generated test data,Meera Iyer
+2025-01-31,EXP-0362,Training,Training related expense,Indigo Airlines,Credit Card,23874.87,INR,Marketing,David Lin,Paid,INV-7253,Auto-generated test data,Sandeep Menon
+2025-04-16,EXP-0363,Travel,Travel related expense,BSES,Cash,49621.22,INR,Admin,Aisha Khan,Reimbursed,INV-8496,-,Carlos Martinez
+2025-02-16,EXP-0364,Meals,Meals related expense,Zoom,Bank Transfer,31736.12,INR,Marketing,Ravi Iyer,Reimbursed,INV-1950,-,Carlos Martinez
+2025-03-12,EXP-0365,Supplies,Supplies related expense,BSES,Cash,24734.07,INR,Sales,Jane Smith,Reimbursed,INV-8105,Auto-generated test data,Emily Chen
+2025-04-14,EXP-0366,Consulting,Consulting related expense,Zoom,UPI,731.12,INR,Engineering,Jane Smith,Reimbursed,INV-7112,Auto-generated test data,Rahul Joshi
+2025-03-24,EXP-0367,Supplies,Supplies related expense,Indigo Airlines,Credit Card,31521.0,INR,Marketing,Jane Smith,Reimbursed,INV-6641,Auto-generated test data,Ravi Sharma
+2025-01-27,EXP-0368,Consulting,Consulting related expense,Google,Cash,3731.71,INR,Sales,Ravi Iyer,Pending,INV-8469,Auto-generated test data,Sandeep Menon
+2025-05-15,EXP-0369,Marketing,Marketing related expense,LinkedIn,Cash,17465.28,INR,Finance,Ravi Iyer,Paid,INV-3701,Auto-generated test data,Rahul Joshi
+2025-04-14,EXP-0370,Travel,Travel related expense,Amazon,Cash,36494.86,INR,Marketing,Jane Smith,Reimbursed,INV-1359,Auto-generated test data,John Smith
+2025-02-13,EXP-0371,Meals,Meals related expense,Facebook,Credit Card,19072.03,INR,Admin,David Lin,Reimbursed,INV-1796,Auto-generated test data,Priya Verma
+2025-01-13,EXP-0372,Meals,Meals related expense,Indigo Airlines,Credit Card,34642.61,INR,Finance,Aisha Khan,Pending,INV-3024,Auto-generated test data,Rahul Joshi
+2025-05-02,EXP-0373,Utilities,Utilities related expense,Amazon,Credit Card,15405.26,INR,Sales,David Lin,Pending,INV-3247,Auto-generated test data,Aisha Khan
+2025-01-27,EXP-0374,Meals,Meals related expense,Google,Credit Card,39345.62,INR,Finance,Jane Smith,Reimbursed,INV-4272,Auto-generated test data,Arjun Rao
+2025-05-14,EXP-0375,Supplies,Supplies related expense,Facebook,UPI,15119.88,INR,Sales,David Lin,Pending,INV-4402,Auto-generated test data,Emily Chen
+2025-05-04,EXP-0376,Marketing,Marketing related expense,Amazon,Credit Card,1131.1,INR,Sales,John Doe,Reimbursed,INV-9095,-,Sandeep Menon
+2025-01-24,EXP-0377,Meals,Meals related expense,Domino's,Bank Transfer,32394.67,INR,Finance,Ravi Iyer,Pending,INV-8606,-,Aisha Khan
+2025-02-14,EXP-0378,Travel,Travel related expense,Google,Bank Transfer,40179.01,INR,Admin,Aisha Khan,Reimbursed,INV-2898,-,Aisha Khan
+2025-01-12,EXP-0379,Travel,Travel related expense,BSES,Cash,16768.71,INR,Finance,David Lin,Pending,INV-2522,Auto-generated test data,Aisha Khan
+2025-03-29,EXP-0380,Utilities,Utilities related expense,Domino's,UPI,20312.39,INR,Finance,Ravi Iyer,Pending,INV-8835,Auto-generated test data,Rahul Joshi
+2025-02-12,EXP-0381,Meals,Meals related expense,BSES,Credit Card,49087.67,INR,Marketing,John Doe,Pending,INV-8908,Auto-generated test data,Emily Chen
+2025-04-23,EXP-0382,Utilities,Utilities related expense,LinkedIn,Bank Transfer,30762.24,INR,Marketing,Aisha Khan,Pending,INV-2850,Auto-generated test data,Aisha Khan
+2025-04-23,EXP-0383,Travel,Travel related expense,,Bank Transfer,32921.19,INR,Sales,David Lin,Reimbursed,INV-4669,Vendor information missing,Meera Iyer
+2025-03-28,EXP-0384,Meals,Meals related expense,LinkedIn,Cash,24355.52,INR,Finance,Jane Smith,Reimbursed,INV-1894,-,Carlos Martinez
+2025-02-10,EXP-0385,Training,Training related expense,Zoom,Cash,4205.83,INR,Finance,Ravi Iyer,Paid,INV-6421,Auto-generated test data,Meera Iyer
+2025-01-13,EXP-0386,Supplies,Supplies related expense,LinkedIn,UPI,40946.61,INR,Sales,Aisha Khan,Pending,INV-8341,-,John Smith
+2025-05-08,EXP-0387,Training,Training related expense,Facebook,Credit Card,49043.2,INR,Sales,John Doe,Pending,INV-7755,-,Sandeep Menon
+2025-05-21,EXP-0388,Travel,Travel related expense,Domino's,Bank Transfer,44560.49,INR,Engineering,Jane Smith,Reimbursed,INV-8474,Auto-generated test data,Carlos Martinez
+2025-04-04,EXP-0389,Travel,Travel related expense,Amazon,UPI,16932.64,INR,Engineering,David Lin,Pending,INV-6952,Auto-generated test data,Meera Iyer
+2025-01-30,EXP-0390,Meals,Meals related expense,Amazon,Credit Card,17397.18,INR,Admin,David Lin,Reimbursed,INV-7125,Auto-generated test data,Carlos Martinez
+2025-01-12,EXP-0391,Utilities,Utilities related expense,Zoom,Cash,41181.01,INR,Finance,John Doe,Pending,INV-4209,-,Ravi Sharma
+2025-04-11,EXP-0392,Supplies,Supplies related expense,Zoom,Cash,35981.0,INR,Sales,Aisha Khan,Paid,INV-3018,Auto-generated test data,Sandeep Menon
+2025-04-26,EXP-0393,Training,Training related expense,,UPI,714.71,INR,Sales,David Lin,Pending,INV-8912,Vendor information missing,Emily Chen
+2025-02-15,EXP-0394,Utilities,Utilities related expense,BSES,Credit Card,19676.58,INR,Engineering,David Lin,Pending,INV-9259,Auto-generated test data,Sandeep Menon
+2025-04-18,EXP-0395,Supplies,Supplies related expense,Google,UPI,48197.88,INR,Admin,Aisha Khan,Paid,INV-3263,Auto-generated test data,Sandeep Menon
+2025-05-12,EXP-0396,Software,Software related expense,Facebook,Cash,10444.01,INR,Engineering,Ravi Iyer,Reimbursed,INV-6657,Auto-generated test data,Sandeep Menon
+2025-02-03,EXP-0397,Utilities,Utilities related expense,Facebook,Credit Card,38158.36,INR,Engineering,Aisha Khan,Reimbursed,INV-7839,Auto-generated test data,Sandeep Menon
+2025-05-17,EXP-0398,Software,Software related expense,LinkedIn,Credit Card,26375.13,INR,Sales,Aisha Khan,Paid,INV-1869,Auto-generated test data,Ravi Sharma
+2025-02-21,EXP-0399,Software,Software related expense,BSES,Bank Transfer,34327.82,INR,Marketing,John Doe,Reimbursed,INV-5835,-,Carlos Martinez
+2025-05-19,EXP-0400,Travel,Travel related expense,Facebook,UPI,5572.76,INR,Engineering,Jane Smith,Reimbursed,INV-7371,-,Arjun Rao
+2025-03-15,EXP-0401,Travel,Travel related expense,LinkedIn,UPI,21120.03,INR,Admin,David Lin,Paid,INV-1212,Auto-generated test data,Arjun Rao
+2025-02-21,EXP-0402,Training,Training related expense,Amazon,Bank Transfer,37877.83,INR,Engineering,David Lin,Paid,INV-4170,-,Rahul Joshi
+2025-02-15,EXP-0403,Meals,Meals related expense,BSES,Cash,36886.43,INR,Sales,Aisha Khan,Paid,INV-8020,-,Arjun Rao
+2025-03-09,EXP-0404,Utilities,Utilities related expense,BSES,Bank Transfer,779.43,INR,Finance,Jane Smith,Paid,INV-3518,Auto-generated test data,Sandeep Menon
+2025-01-14,EXP-0405,Software,Software related expense,Zoom,Bank Transfer,4107.6,INR,Admin,David Lin,Paid,INV-4012,Auto-generated test data,Aisha Khan
+2025-05-10,EXP-0406,Utilities,Utilities related expense,LinkedIn,UPI,101413.16,INR,Marketing,Jane Smith,Reimbursed,INV-6437,Suspiciously large amount,Sandeep Menon
+2025-03-17,EXP-0407,Supplies,Supplies related expense,Zoom,Credit Card,6178.74,INR,Admin,Aisha Khan,Paid,INV-4994,Auto-generated test data,Arjun Rao
+2025-03-24,EXP-0408,Consulting,Consulting related expense,Domino's,UPI,13201.23,INR,Admin,John Doe,Reimbursed,INV-7143,Auto-generated test data,Ravi Sharma
+2025-05-11,EXP-0409,Training,Training related expense,Zoom,Credit Card,15173.48,INR,Marketing,Ravi Iyer,Reimbursed,INV-2349,Auto-generated test data,Rahul Joshi
+2025-02-12,EXP-0410,Travel,Travel related expense,Domino's,Cash,33681.59,INR,Marketing,Aisha Khan,Paid,INV-4368,Auto-generated test data,Rahul Joshi
+2025-04-22,EXP-0411,Meals,Meals related expense,BSES,Credit Card,23231.65,INR,Admin,John Doe,Paid,INV-2200,-,Rahul Joshi
+2025-03-06,EXP-0412,Meals,Meals related expense,Amazon,Bank Transfer,20677.82,INR,Finance,Aisha Khan,Pending,INV-6183,-,Meera Iyer
+2025-01-31,EXP-0413,Travel,Travel related expense,Domino's,Credit Card,35193.66,INR,Sales,Ravi Iyer,Reimbursed,INV-2738,-,Ravi Sharma
+2025-03-19,EXP-0414,Meals,Meals related expense,Google,UPI,19379.97,INR,Sales,Aisha Khan,Paid,INV-9740,-,John Smith
+2025-04-11,EXP-0415,Software,Software related expense,BSES,Bank Transfer,34025.81,INR,Admin,John Doe,Reimbursed,INV-3316,-,Rahul Joshi
+2025-01-02,EXP-0416,Consulting,Consulting related expense,Domino's,Bank Transfer,10897.62,INR,Admin,Jane Smith,Pending,INV-9397,-,Priya Verma
+2025-02-17,EXP-0417,Supplies,Supplies related expense,Google,Cash,6173.82,INR,Engineering,John Doe,Reimbursed,INV-8557,Auto-generated test data,Priya Verma
+2025-01-19,EXP-0418,Software,Software related expense,Domino's,Bank Transfer,5361.02,INR,Engineering,Aisha Khan,Pending,INV-6851,-,John Smith
+2025-03-02,EXP-0419,Meals,Meals related expense,Google,Credit Card,45055.87,INR,Admin,Aisha Khan,Pending,INV-6379,Auto-generated test data,Rahul Joshi
+2025-03-20,EXP-0420,Utilities,Utilities related expense,Facebook,Bank Transfer,47953.62,INR,Marketing,John Doe,Pending,INV-5033,Auto-generated test data,Rahul Joshi
+2025-04-22,EXP-0421,Software,Software related expense,Facebook,Cash,34139.22,INR,Admin,Aisha Khan,Pending,INV-8296,Auto-generated test data,Carlos Martinez
+2025-03-20,EXP-0422,Training,Training related expense,Domino's,Cash,32454.8,INR,Sales,Ravi Iyer,Paid,INV-9824,-,Rahul Joshi
+2025-01-20,EXP-0423,Meals,Meals related expense,Indigo Airlines,Credit Card,40725.8,INR,Engineering,Aisha Khan,Reimbursed,INV-4485,Auto-generated test data,Aisha Khan
+2025-05-22,EXP-0424,Software,Software related expense,Zoom,Cash,18608.02,INR,Marketing,David Lin,Reimbursed,INV-5767,-,John Smith
+2025-05-09,EXP-0425,Meals,Meals related expense,LinkedIn,Bank Transfer,25357.28,INR,Marketing,David Lin,Reimbursed,INV-3717,Auto-generated test data,John Smith
+2025-02-05,EXP-0426,Training,Training related expense,BSES,Cash,28534.68,INR,Engineering,Jane Smith,Reimbursed,INV-8921,Auto-generated test data,Ravi Sharma
+2025-01-11,EXP-0427,Supplies,Supplies related expense,Zoom,Cash,3611.63,INR,Admin,Jane Smith,Paid,INV-4387,Auto-generated test data,Priya Verma
+2025-04-03,EXP-0428,Consulting,Consulting related expense,Zoom,UPI,44136.82,INR,Sales,Ravi Iyer,Paid,INV-9542,Auto-generated test data,Meera Iyer
+2025-03-12,EXP-0429,Software,Software related expense,BSES,UPI,32856.93,INR,Admin,David Lin,Reimbursed,INV-2275,Auto-generated test data,Arjun Rao
+2025-04-07,EXP-0430,Supplies,Supplies related expense,LinkedIn,Bank Transfer,40953.22,INR,Admin,Aisha Khan,Pending,INV-1108,Auto-generated test data,John Smith
+2025-02-05,EXP-0431,Training,Training related expense,BSES,Cash,4315.87,INR,Admin,Jane Smith,Paid,INV-4062,-,Meera Iyer
+2025-01-31,EXP-0432,Supplies,Supplies related expense,LinkedIn,Bank Transfer,36152.66,INR,Finance,Aisha Khan,Pending,INV-4452,Auto-generated test data,Priya Verma
+2025-04-16,EXP-0433,Travel,Travel related expense,Amazon,Credit Card,6830.31,INR,Engineering,Jane Smith,Paid,INV-9399,-,Ravi Sharma
+2025-05-27,EXP-0434,Utilities,Utilities related expense,Indigo Airlines,Cash,13283.85,INR,Marketing,David Lin,Pending,INV-1305,Auto-generated test data,Sandeep Menon
+2025-03-14,EXP-0435,Meals,Meals related expense,Amazon,UPI,30523.03,INR,Finance,Aisha Khan,Paid,INV-4594,Auto-generated test data,Sandeep Menon
+2025-02-06,EXP-0436,Utilities,Utilities related expense,Google,Cash,36347.25,INR,Admin,Aisha Khan,Reimbursed,INV-2127,-,Ravi Sharma
+2025-04-09,EXP-0437,Utilities,Utilities related expense,Domino's,Credit Card,10516.25,INR,Engineering,Aisha Khan,Paid,INV-2577,-,Emily Chen
+2025-01-10,EXP-0438,Meals,Meals related expense,Domino's,UPI,33139.93,INR,Engineering,David Lin,Paid,INV-8069,Auto-generated test data,Ravi Sharma
+2025-04-05,EXP-0439,Travel,Travel related expense,LinkedIn,Cash,46951.87,INR,Finance,Aisha Khan,Pending,INV-2600,Auto-generated test data,Sandeep Menon
+2025-03-07,EXP-0440,Training,Training related expense,Amazon,Credit Card,14521.7,INR,Engineering,Aisha Khan,Pending,INV-4096,-,Ravi Sharma
+2025-01-02,EXP-0441,Meals,Meals related expense,Indigo Airlines,UPI,32900.03,INR,Admin,Aisha Khan,Pending,INV-2746,-,John Smith
+2025-05-30,EXP-0442,Software,Software related expense,Google,UPI,28451.18,INR,Engineering,Ravi Iyer,Reimbursed,INV-7511,Auto-generated test data,John Smith
+2025-04-16,EXP-0443,Training,Training related expense,BSES,Bank Transfer,28175.14,INR,Finance,Ravi Iyer,Pending,INV-6641,Auto-generated test data,Arjun Rao
+2025-04-12,EXP-0444,Utilities,Utilities related expense,Domino's,Cash,22606.45,INR,Marketing,John Doe,Paid,INV-9328,Auto-generated test data,Emily Chen
+2025-03-28,EXP-0445,Travel,Travel related expense,BSES,UPI,48246.23,INR,Sales,John Doe,Paid,INV-8727,Auto-generated test data,Aisha Khan
+2025-04-22,EXP-0446,Meals,Meals related expense,Domino's,Bank Transfer,11477.63,INR,Sales,David Lin,Paid,INV-7296,Auto-generated test data,Ravi Sharma
+2025-04-13,EXP-0447,Software,Software related expense,Indigo Airlines,Cash,32194.42,INR,Finance,John Doe,Paid,INV-9489,-,Aisha Khan
+2025-01-09,EXP-0448,Supplies,Supplies related expense,BSES,Credit Card,18307.13,INR,Sales,Jane Smith,Paid,INV-5520,Auto-generated test data,Carlos Martinez
+2025-04-01,EXP-0449,Consulting,Consulting related expense,LinkedIn,Cash,26128.26,INR,Sales,John Doe,Reimbursed,INV-5661,Auto-generated test data,Sandeep Menon
+2025-05-24,EXP-0450,Marketing,Marketing related expense,Facebook,Bank Transfer,11701.63,INR,Marketing,Aisha Khan,Pending,INV-1076,-,Sandeep Menon
+2025-04-15,EXP-0451,Meals,Meals related expense,Domino's,Bank Transfer,17328.31,INR,Sales,David Lin,Pending,INV-9813,Auto-generated test data,Arjun Rao
+2025-05-28,EXP-0452,Software,Software related expense,Zoom,UPI,28376.85,INR,Marketing,Ravi Iyer,Pending,INV-8548,Auto-generated test data,John Smith
+2025-01-08,EXP-0453,Training,Training related expense,,Bank Transfer,3843.94,INR,Marketing,Jane Smith,Pending,INV-7757,Vendor information missing,John Smith
+2025-05-13,EXP-0454,Travel,Travel related expense,Google,Cash,14720.83,INR,Finance,Ravi Iyer,Paid,INV-3924,Auto-generated test data,Meera Iyer
+2025-04-01,EXP-0455,Supplies,Supplies related expense,Google,Cash,47382.35,INR,Marketing,Aisha Khan,Reimbursed,INV-4271,-,Sandeep Menon
+2025-03-03,EXP-0456,Software,Software related expense,Amazon,Cash,10536.94,INR,Marketing,David Lin,Pending,INV-3555,Auto-generated test data,Rahul Joshi
+2025-01-31,EXP-0457,Meals,Meals related expense,Zoom,Credit Card,38330.09,INR,Engineering,John Doe,Pending,INV-7081,Auto-generated test data,John Smith
+2025-05-07,EXP-0458,Software,Software related expense,Zoom,Cash,49227.54,INR,Engineering,Ravi Iyer,Pending,INV-4638,Auto-generated test data,Emily Chen
+2025-02-02,EXP-0459,Travel,Travel related expense,LinkedIn,UPI,47012.89,INR,Sales,David Lin,Pending,INV-7450,Auto-generated test data,Ravi Sharma
+2025-02-14,EXP-0460,Training,Training related expense,Domino's,UPI,16124.74,INR,Sales,John Doe,Reimbursed,INV-4452,Auto-generated test data,Aisha Khan
+2025-01-26,EXP-0461,Marketing,Marketing related expense,Facebook,Bank Transfer,9764.05,INR,Admin,Jane Smith,Pending,INV-8722,Auto-generated test data,Arjun Rao
+2025-03-29,EXP-0462,Marketing,Marketing related expense,BSES,UPI,21485.17,INR,Finance,Ravi Iyer,Pending,INV-7563,-,Emily Chen
+2025-02-16,EXP-0463,Utilities,Utilities related expense,Amazon,Credit Card,36180.37,INR,Marketing,David Lin,Pending,INV-7240,-,Emily Chen
+2025-02-08,EXP-0464,Training,Training related expense,Indigo Airlines,Cash,21365.27,INR,Marketing,David Lin,Reimbursed,INV-6172,Auto-generated test data,Carlos Martinez
+2025-03-18,EXP-0465,Software,Software related expense,Indigo Airlines,UPI,5399.25,INR,Marketing,John Doe,Paid,INV-5166,Auto-generated test data,Aisha Khan
+2025-01-25,EXP-0466,Training,Training related expense,Facebook,Bank Transfer,18367.62,INR,Engineering,David Lin,Pending,INV-6638,-,Carlos Martinez
+2025-02-01,EXP-0467,Marketing,Marketing related expense,Amazon,Cash,48978.97,INR,Admin,Ravi Iyer,Pending,INV-9363,Auto-generated test data,Meera Iyer
+2025-04-25,EXP-0468,Meals,Meals related expense,LinkedIn,Bank Transfer,23455.73,INR,Marketing,Jane Smith,Reimbursed,INV-6527,Auto-generated test data,Aisha Khan
+2025-05-27,EXP-0469,Consulting,Consulting related expense,Domino's,Credit Card,8518.97,INR,Marketing,Ravi Iyer,Pending,INV-5773,Auto-generated test data,Arjun Rao
+2025-04-12,EXP-0470,Software,Software related expense,Zoom,Bank Transfer,37520.83,INR,Engineering,Aisha Khan,Pending,INV-3741,-,Rahul Joshi
+2025-01-06,EXP-0471,Utilities,Utilities related expense,Amazon,Bank Transfer,47051.65,INR,Sales,Jane Smith,Paid,INV-7505,-,Sandeep Menon
+2025-01-17,EXP-0472,Training,Training related expense,Indigo Airlines,Credit Card,38661.22,INR,Engineering,John Doe,Paid,INV-5300,Auto-generated test data,Aisha Khan
+2025-01-22,EXP-0473,Consulting,Consulting related expense,Google,Cash,12746.13,INR,Admin,Aisha Khan,Reimbursed,INV-3071,-,Arjun Rao
+2025-02-13,EXP-0474,Travel,Travel related expense,Indigo Airlines,Bank Transfer,43088.26,INR,Admin,Aisha Khan,Pending,INV-9856,Auto-generated test data,Emily Chen
+2025-05-21,EXP-0475,Training,Training related expense,BSES,Cash,29746.13,INR,Finance,David Lin,Pending,INV-9576,Auto-generated test data,Meera Iyer
+2025-05-17,EXP-0476,Software,Software related expense,Facebook,UPI,27213.57,INR,Sales,Aisha Khan,Pending,INV-6992,Auto-generated test data,Carlos Martinez
+2025-02-09,EXP-0477,Software,Software related expense,Indigo Airlines,Credit Card,26404.15,INR,Marketing,Ravi Iyer,Pending,INV-8687,Auto-generated test data,Meera Iyer
+2025-05-06,EXP-0478,Training,Training related expense,Google,Credit Card,38410.53,INR,Admin,David Lin,Paid,INV-1118,Auto-generated test data,Priya Verma
+2025-02-18,EXP-0479,Consulting,Consulting related expense,LinkedIn,UPI,12869.86,INR,Finance,Aisha Khan,Paid,INV-5308,-,Priya Verma
+2025-03-03,EXP-0480,Software,Software related expense,Google,Bank Transfer,20938.74,INR,Sales,Jane Smith,Paid,INV-5744,-,John Smith
+2025-04-27,EXP-0481,Training,Training related expense,Google,UPI,9795.58,INR,Sales,Jane Smith,Paid,INV-9764,-,Ravi Sharma
+2025-01-27,EXP-0482,Software,Software related expense,Google,Cash,35902.2,INR,Sales,Jane Smith,Paid,INV-3468,-,Aisha Khan
+2025-02-25,EXP-0483,Marketing,Marketing related expense,LinkedIn,Bank Transfer,39393.4,INR,Finance,Ravi Iyer,Pending,INV-1519,Auto-generated test data,John Smith
+2025-02-07,EXP-0484,Travel,Travel related expense,Google,UPI,4033.54,INR,Finance,Jane Smith,Paid,INV-5097,Auto-generated test data,Meera Iyer
+2025-01-04,EXP-0485,Meals,Meals related expense,Amazon,UPI,38675.65,INR,Finance,Jane Smith,Reimbursed,INV-1549,-,Aisha Khan
+2025-01-25,EXP-0486,Supplies,Supplies related expense,Zoom,UPI,34231.39,INR,Admin,Ravi Iyer,Paid,INV-1691,Auto-generated test data,Rahul Joshi
+2025-05-21,EXP-0487,Meals,Meals related expense,Google,UPI,32106.74,INR,Marketing,Ravi Iyer,Paid,INV-4568,Auto-generated test data,John Smith
+2025-03-02,EXP-0488,Consulting,Consulting related expense,Facebook,Credit Card,8784.34,INR,Admin,David Lin,Paid,INV-7484,Auto-generated test data,Arjun Rao
+2025-01-03,EXP-0489,Travel,Travel related expense,Zoom,Cash,18884.23,INR,Sales,Jane Smith,Paid,INV-9190,-,Carlos Martinez
+2025-03-28,EXP-0490,Travel,Travel related expense,Indigo Airlines,Bank Transfer,32406.46,INR,Engineering,John Doe,Paid,INV-8992,-,John Smith
+2025-05-23,EXP-0491,Marketing,Marketing related expense,Zoom,Cash,1556.97,INR,Finance,Ravi Iyer,Reimbursed,INV-3207,-,Emily Chen
+2025-01-11,EXP-0492,Training,Training related expense,Zoom,Bank Transfer,27365.34,INR,Finance,Jane Smith,Reimbursed,INV-4057,Auto-generated test data,Arjun Rao
+2025-03-24,EXP-0493,Training,Training related expense,Google,Cash,3909.39,INR,Marketing,Aisha Khan,Pending,INV-5314,Auto-generated test data,Meera Iyer
+2025-04-27,EXP-0494,Travel,Travel related expense,LinkedIn,Cash,44205.15,INR,Engineering,Ravi Iyer,Reimbursed,INV-4912,Auto-generated test data,John Smith
+2025-01-17,EXP-0495,Consulting,Consulting related expense,Amazon,UPI,38403.84,INR,Marketing,David Lin,Pending,INV-6285,Auto-generated test data,John Smith
+2025-03-24,EXP-0496,Meals,Meals related expense,Domino's,Credit Card,2666.97,INR,Marketing,Jane Smith,Paid,INV-4310,-,Emily Chen
+2025-02-19,EXP-0497,Meals,Meals related expense,Indigo Airlines,UPI,33067.1,INR,Engineering,David Lin,Reimbursed,INV-5193,-,Sandeep Menon
+2025-02-26,EXP-0498,Meals,Meals related expense,Indigo Airlines,Cash,32959.59,INR,Sales,Aisha Khan,Reimbursed,INV-1994,Auto-generated test data,John Smith
+2025-04-17,EXP-0499,Marketing,Marketing related expense,Indigo Airlines,Bank Transfer,26686.53,INR,Sales,Ravi Iyer,Paid,INV-4537,Auto-generated test data,John Smith
+2025-01-25,EXP-0500,Meals,Meals related expense,Amazon,UPI,9878.29,INR,Engineering,Jane Smith,Reimbursed,INV-3931,Auto-generated test data,Rahul Joshi

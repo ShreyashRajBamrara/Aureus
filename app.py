@@ -1,22 +1,45 @@
 import streamlit as st
-from components.sidebar import show_sidebar
-import importlib
+import os
+from dotenv import load_dotenv
+
+# Import page functions
+from pages.dashboard_page import dashboard_page
+from pages.advisor_page import advisor_page
+from pages.analysis_report_page import analysis_report_page
+
+# Load environment variables
+load_dotenv()
 
 # Set Streamlit page config
-st.set_page_config(page_title="Aureus for Startups", layout="wide")
+st.set_page_config(
+    page_title="Aureus for Startups",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-# Show sidebar navigation
-page = show_sidebar()
+# Constants
+CURRENT_CASH = float(os.getenv('CURRENT_CASH', 10000000))  # Default 10M if not set
 
-# Page routing
+# Sidebar for navigation
+st.sidebar.title("Aureus for Startups")
+page = st.sidebar.radio(
+    "Navigation",
+    ("Dashboard", "Advisor", "Analysis and Report"),
+    index=0
+)
+st.sidebar.markdown("---")
+st.sidebar.info("AI Finance Assistant for Startups")
+
+# Main content based on selected page
 if page == "Dashboard":
-    dashboard = importlib.import_module("pages.1_Dashboard")
-    dashboard.show()
+    dashboard_page()
+
 elif page == "Advisor":
-    advisor = importlib.import_module("pages.2_Advisor")
-    advisor.show()
-elif page == "FraudWatch":
-    fraudwatch = importlib.import_module("pages.3_FraudWatch")
-    fraudwatch.show()
-else:
-    st.write("Select a page from the sidebar.")
+    advisor_page()
+
+elif page == "Analysis and Report":
+    analysis_report_page()
+
+# Run the app
+if __name__ == "__main__":
+    pass

@@ -1,10 +1,9 @@
 # Core Python libraries
-# Change this line:
-pandas==2.1.3  # instead of 2.2.1
+pandas==2.1.3
 numpy==1.26.4
 
 # Streamlit for UI
-streamlit==1.35.0
+streamlit==1.8.0
 
 # Plotting & Visuals
 plotly==5.22.0
@@ -12,16 +11,22 @@ matplotlib==3.8.4
 
 # AI / ML Libraries
 scikit-learn==1.4.2
-prophet==1.1.5     # For forecasting, install using pip install 'prophet' with pystan
+prophet==1.1.5     # For forecasting
 statsmodels==0.14.2 # For ARIMA/seasonality
 
 # LangChain & LLMs
 langchain==0.1.14
+langchain-core==0.1.22
+langchain-community==0.0.19
+langchain-ollama==0.0.2
 ollama==0.1.9       # For running local models
 
 # LLM and NLP Utilities
-openai==1.30.1      # Only if you want cloud fallback
+openai==1.30.1      # For cloud fallback
 tiktoken==0.7.0     # Token counting for OpenAI models
+
+# Database for chat history
+sqlalchemy==2.0.27
 
 # Email & PDF (for reporting)
 email-validator==2.1.1
@@ -32,3 +37,6 @@ python-dotenv==1.0.1
 
 # Dev tools (Optional)
 ipython==8.23.0
+
+# Make sure to install prophet with its dependencies:
+# pip install 'prophet'
