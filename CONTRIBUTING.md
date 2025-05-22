@@ -21,11 +21,16 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 5. Make sure your code lints.
 6. Issue that pull request!
 
-## Any contributions you make will be under the MIT Software License
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+## Individual Contributions
 
-## Report bugs using GitHub's [issue tracker](https://github.com/ShreyashRajBamrara/Aureus/issues)
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/ShreyashRajBamrara/Aureus/issues/new); it's that easy!
+Here's a breakdown of the key contributions by the project team members:
+
+*   **Shreyash Raj Bamrara:** Developed the AI advisor/chatbot, created the various graphs and visualizations, and built the data preprocessing module.
+*   **Daksh Gautam:** Responsible for the frontend development and integrating the different components into the final application.
+*   **Manas Nautiyal:** Completed the anomaly detection and forecasting parts of the system.
+
+## Report bugs using GitHub's [issue tracker](https://github.com/ShreyashRajBamrara/AureusTwo/issues)
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/ShreyashRajBamrara/AureusTwo/issues/new); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
 
@@ -43,7 +48,4 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 * Use 4 spaces for indentation rather than tabs
 * Keep line length under 100 characters
-* Run `flake8` for style enforcement
-
-## License
-By contributing, you agree that your contributions will be licensed under its MIT License. 
+* Run `flake8` for style enforcement 

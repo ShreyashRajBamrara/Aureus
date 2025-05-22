@@ -23,8 +23,8 @@ Before installing Aureus, ensure you have:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/ShreyashRajBamrara/Aureus.git
-cd aureus
+git clone https://github.com/ShreyashRajBamrara/AureusTwo.git
+cd AureusTwo
 ```
 
 ### 2. Create a Virtual Environment

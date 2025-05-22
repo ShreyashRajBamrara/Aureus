@@ -15,8 +15,8 @@ A comprehensive financial analysis system designed for startups and businesses t
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ShreyashRajBamrara/Aureus.git
-cd Aureus
+git clone https://github.com/ShreyashRajBamrara/AureusTwo.git
+cd AureusTwo
 ```
 
 2. Install dependencies:
@@ -39,10 +39,6 @@ For detailed installation and setup instructions, please refer to [GETTING_START
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
