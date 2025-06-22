@@ -44,8 +44,6 @@ flowchart LR
         A1[Shreyash Raj Bamrara] -->|AI Advisor, Data Preprocessing, Visualizations| Project
         A2[Manas Nautiyal] -->|Anomaly Detection, Forecasting| Project
         A3[Daksh Gautam] -->|Frontend, Integration, UI/UX| Project
-        A4[Priya Singh] -->|Testing, Documentation| Project
-        A5[Rohan Mehra] -->|Bug Fixes, Code Review| Project
     end
     Project((Aureus))
 ```
