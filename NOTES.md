@@ -1,9 +1,47 @@
 # Aureus Financial Analysis System - Technical Documentation
 
 ## Project Overview
-Aureus is a comprehensive financial analysis system designed for startups and businesses to track, analyze, and forecast their financial data. The system provides intuitive visualizations, anomaly detection, and AI-powered financial advice.
+Aureus is a financial analysis system designed for startups and businesses to track, analyze, and forecast their financial data. The system provides visualizations, anomaly detection, and AI-powered financial advice. The project is collaboratively developed by a multi-disciplinary team.
 
-## System Architecture
+## System Flowchart
+
+```mermaid
+flowchart TD
+    A[User] -->|Uploads CSV| B[Data Preprocessing]
+    B --> C[Dashboard]
+    B --> D[Forecasting]
+    B --> E[Anomaly Detection]
+    B --> F[AI Advisor]
+    C --> G[Visualizations]
+    D --> H[Prophet Model]
+    E --> I[Isolation Forest]
+    F --> J[LLM Summarizer]
+    G --> K[Charts & Tables]
+    H --> L[Forecast Output]
+    I --> M[Anomaly Output]
+    J --> N[Smart Summaries]
+    K --> O[User Insights]
+    L --> O
+    M --> O
+    N --> O
+    O --> P[Email Center / Alerts]
+```
+
+## Team Contributions
+
+```mermaid
+flowchart LR
+    subgraph Team Contributions
+        A1[Shreyash Raj Bamrara] -->|AI Advisor, Data Preprocessing, Visualizations| Project
+        A2[Manas Nautiyal] -->|Anomaly Detection, Forecasting| Project
+        A3[Daksh Gautam] -->|Frontend, Integration, UI/UX| Project
+        A4[Priya Singh] -->|Testing, Documentation| Project
+        A5[Rohan Mehra] -->|Bug Fixes, Code Review| Project
+    end
+    Project((Aureus))
+```
+
+## System Architecture (Legacy)
 
 ```mermaid
 graph TD
@@ -31,81 +69,39 @@ graph TD
 
 ## Core Components
 
-### 1. Dashboard (`components/dashboard.py`)
-**Purpose**: Main visualization and analysis interface
-**Key Features**:
-- Time-based aggregation (Daily/Weekly/Monthly)
-- Multiple visualization types
-- Real-time metrics
-- Interactive data exploration
+### Dashboard (`components/dashboard.py`)
+- Main visualization and analysis interface
+- Interactive, real-time metrics and charts
 
-**Implementation Details**:
-- Uses Plotly for interactive visualizations
-- Pandas for data manipulation
-- Streamlit for UI components
+### Forecasting (`components/forecasting.py`)
+- Predicts future financial trends using Prophet
+- Visualizes confidence intervals and trends
 
-**Limitations**:
-- Memory-intensive with large datasets
-- Limited to numerical and categorical data
-- No real-time data updates
+### Anomaly Detection (`components/anomaly.py`)
+- Identifies unusual financial patterns using Isolation Forest
+- Presents anomalies in a user-friendly table
 
-### 2. Forecasting (`components/forecasting.py`)
-**Purpose**: Predict future financial trends
-**Model**: Facebook Prophet
-**Why Prophet?**:
-- Handles missing data well
-- Accounts for seasonality
-- Provides confidence intervals
-- Works well with irregular time series
+### AI Advisor (`components/advisor.py`)
+- LLM-powered chatbot for financial queries
+- Generates smart, context-aware summaries for dashboard, forecasting, and anomaly detection
+- Integrates with Ollama (TinyLlama) for local, private LLM inference
 
-**Implementation Details**:
-```python
-model = Prophet(
-    yearly_seasonality=True,
-    weekly_seasonality=True,
-    daily_seasonality=True,
-    interval_width=0.95
-)
-```
+## Data Flow
 
-**Limitations**:
-- Requires sufficient historical data
-- Assumes linear growth
-- May not capture sudden market changes
+1. Data input: CSV upload, validation, preprocessing
+2. Processing: Aggregation, feature engineering, anomaly detection
+3. Analysis: Dashboard, forecasting, pattern detection, LLM summaries
+4. Output: Visualizations, smart summaries, alerts, email notifications
 
-### 3. Anomaly Detection (`components/anomaly.py`)
-**Purpose**: Identify unusual financial patterns
-**Model**: Isolation Forest
-**Why Isolation Forest?**:
-- Efficient with high-dimensional data
-- Works well with non-normal distributions
-- Low computational complexity
+## Best Practices
+- Data validation and regular backups
+- Efficient, modular code structure
+- Consistent code style and documentation
 
-**Implementation Details**:
-```python
-model = IsolationForest(
-    contamination=0.1,
-    random_state=42
-)
-```
-
-**Limitations**:
-- Requires parameter tuning
-- May miss contextual anomalies
-- Sensitive to data quality
-
-### 4. AI Advisor (`components/advisor.py`)
-**Purpose**: Provide financial insights and advice
-**Implementation**: Rule-based system with predefined responses
-**Features**:
-- Topic-based response routing
-- Financial term definitions
-- Contextual advice generation
-
-**Limitations**:
-- Limited to predefined responses
-- No learning capability
-- May not handle complex queries
+## Future Improvements
+- Real-time data updates
+- Advanced analytics and custom reports
+- More LLM-powered features
 
 ## Libraries Used
 
@@ -149,118 +145,7 @@ model = IsolationForest(
 - Efficient implementations
 - Active community
 
-## Data Flow
-
-1. **Data Input**
-   - CSV file upload
-   - Data validation
-   - Preprocessing
-
-2. **Data Processing**
-   - Aggregation
-   - Feature engineering
-   - Anomaly detection
-
-3. **Analysis**
-   - Dashboard generation
-   - Forecasting
-   - Pattern detection
-
-4. **Output**
-   - Visualizations
-   - Reports
-   - Alerts
-
-## Best Practices
-
-1. **Data Management**
-   - Regular backups
-   - Data validation
-   - Error handling
-
-2. **Performance**
-   - Caching where appropriate
-   - Efficient data structures
-   - Optimized queries
-
-3. **Security**
-   - Input validation
-   - Error handling
-   - Secure data storage
-
-## Future Improvements
-
-1. **Technical**
-   - Real-time data updates
-   - Machine learning integration
-   - API integration
-
-2. **Features**
-   - Custom report generation
-   - Advanced analytics
-   - Mobile support
-
-3. **User Experience**
-   - More interactive visualizations
-   - Customizable dashboards
-   - Enhanced filtering
-
 ## Usage Guide
 
 1. **Setup**
-   ```bash
-   pip install -r requirements.txt
-   streamlit run app.py
    ```
-
-2. **Data Upload**
-   - Use the Data Upload page
-   - Follow the CSV format
-   - Validate data
-
-3. **Analysis**
-   - Use Dashboard for overview
-   - Check Forecasting for trends
-   - Monitor Anomalies
-   - Consult AI Advisor
-
-4. **Reports**
-   - Generate periodic reports
-   - Export data
-   - Share insights
-
-## Troubleshooting
-
-1. **Common Issues**
-   - Data format errors
-   - Memory limitations
-   - Performance issues
-
-2. **Solutions**
-   - Check data format
-   - Optimize data size
-   - Use caching
-
-## Contributing
-
-1. **Development**
-   - Follow PEP 8
-   - Add documentation
-   - Write tests
-
-2. **Testing**
-   - Unit tests
-   - Integration tests
-   - Performance tests
-
-## Resources
-
-1. **Documentation**
-   - Streamlit docs
-   - Pandas docs
-   - Prophet docs
-
-2. **Learning**
-   - Online courses
-   - Tutorials
-   - Community forums 
