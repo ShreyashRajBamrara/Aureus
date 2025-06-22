@@ -62,8 +62,12 @@ class AnomalyDetector:
         
         # Calculate rolling statistics
         data_sorted = data.sort_values('date')
-        features['rolling_mean'] = data_sorted['amount'].rolling(window=7, min_periods=1).mean()
-        features['rolling_std'] = data_sorted['amount'].rolling(window=7, min_periods=1).std()
+        if 'amount' in data_sorted.columns:
+            features['rolling_mean'] = data_sorted['amount'].rolling(window=7, min_periods=1).mean()
+            features['rolling_std'] = data_sorted['amount'].rolling(window=7, min_periods=1).std()
+        elif 'Amount' in data_sorted.columns:
+            features['rolling_mean'] = data_sorted['Amount'].rolling(window=7, min_periods=1).mean()
+            features['rolling_std'] = data_sorted['Amount'].rolling(window=7, min_periods=1).std()
         
         # Fill NaN values
         features = features.bfill().ffill()
@@ -107,11 +111,17 @@ class AnomalyDetector:
 
         st.subheader("Detected Anomalies")
         
+        # Choose the correct column for amount
+        amount_col = 'amount' if 'amount' in anomalies.columns else 'Amount' if 'Amount' in anomalies.columns else None
+        if amount_col is None:
+            st.error("No 'amount' or 'Amount' column found in anomalies data.")
+            return
+
         # Displaying the plot
         fig = go.Figure()
         fig.add_trace(go.Scatter(
             x=anomalies['date'],
-            y=anomalies['amount'],
+            y=anomalies[amount_col],
             mode='markers',
             marker=dict(color='red', size=10),
             text=[f"Employee: {name}" for name in anomalies['Employee Name']],

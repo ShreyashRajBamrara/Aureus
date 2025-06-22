@@ -94,7 +94,7 @@ class FinanceApp:
         - **Dashboard:** Visualize your financial health with interactive charts and summaries.
         - **Forecasting:** Predict future trends using advanced forecasting models.
         - **Anomaly Detection:** Automatically flag unusual or suspicious transactions.
-        - **Email Center:** Instantly notify team members about anomalies via email.
+        - **Email Center:** Send alerts to relevant people from the Email Center.
         - **AI Advisor:** Get AI-powered financial advice and insights.
         
         ### How It Works
