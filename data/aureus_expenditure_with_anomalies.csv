@@ -1,101 +1,103 @@
-Date,Expense ID,Category,Description,Vendor,Payment Method,Amount,Currency,Department,Approved By,Status,Invoice No.,Notes,Employee Name
-2025-01-05,EXP-0001,Travel,Client meeting in Mumbai,Ola,Cash,2500,INR,Sales,Rahul Sharma,Paid,INV-1001,-,Shreyash Bamrara
-2025-01-07,EXP-0002,Software,Subscription for design tool,Adobe,Credit Card,1200,INR,Design,Daksh Gautam,Paid,INV-1002,Monthly subscription,Manas Nautiyal
-2025-01-10,EXP-0003,Meals,Team lunch,Box8,UPI,1800,INR,HR,Alok Nawani,Reimbursed,INV-1003,Team bonding,Riya Chatterjee
-2025-01-12,EXP-0004,Marketing,Facebook ads,Facebook,Credit Card,5000,INR,Marketing,Neha Patel,Pending,INV-1004,New campaign,Arjun Malhotra
-2025-01-15,EXP-0005,Supplies,Office stationery,Amazon,UPI,3200,INR,Operations,Priya Singh,Paid,INV-1005,-,Vikram Joshi
-2025-01-18,EXP-0006,Travel,Bangalore conference,Indigo Airlines,Bank Transfer,8500,INR,Sales,Rahul Sharma,Pending,INV-1006,Tech summit,Shreya Gupta
-2025-01-20,EXP-0007,Utilities,Electricity bill,BSES,Cash,4500,INR,Operations,Alok Nawani,Paid,INV-1007,-,Aditya Rao
-2025-01-22,EXP-0008,Training,Python workshop,Udemy,Credit Card,1500,INR,Engineering,Daksh Gautam,Reimbursed,INV-1008,Skill development,Kavya Reddy
-2025-01-25,EXP-0009,Marketing,Google Ads,Google,UPI,6000,INR,Marketing,Neha Patel,Paid,INV-1009,-,Rohan Mehra
-2025-01-28,EXP-0010,Supplies,Water bottles,Local Store,Cash,800,INR,HR,Priya Singh,Paid,INV-1010,-,Ananya Iyer
-2025-02-02,EXP-0011,Software,Zoom subscription,Zoom,Bank Transfer,2000,INR,Operations,Daksh Gautam,Pending,INV-1011,Quarterly plan,Vedant Kapoor
-2025-02-05,EXP-0012,Travel,Client visit in Delhi,Uber,Cash,1200,INR,Sales,Rahul Sharma,Reimbursed,INV-1012,-,Ishaan Banerjee
-2025-02-08,EXP-0013,Meals,Dinner with investors,Dominos,UPI,3500,INR,Executive,Alok Nawani,Paid,INV-1013,Funding discussion,Niharika Sinha
-2025-02-10,EXP-0014,Marketing,Instagram promotion,Instagram,Credit Card,3000,INR,Marketing,Neha Patel,Pending,INV-1014,Product launch,Abhishek Nair
-2025-02-12,EXP-0015,Utilities,Internet bill,Airtel,UPI,1800,INR,Operations,Priya Singh,Paid,INV-1015,-,Tanvi Deshpande
-2025-02-15,EXP-0016,Training,React JS course,Coursera,Bank Transfer,2500,INR,Engineering,Daksh Gautam,Reimbursed,INV-1016,Frontend upgrade,Siddharth Menon
-2025-02-18,EXP-0017,Travel,Pune office visit,Ola,Cash,900,INR,Management,Alok Nawani,Paid,INV-1017,Branch audit,Aarav Choudhary
-2025-02-20,EXP-0018,Supplies,Printer cartridges,Amazon,UPI,2200,INR,Operations,Priya Singh,Pending,INV-1018,-,Anika Sharma
-2025-02-22,EXP-0019,Marketing,LinkedIn premium,LinkedIn,Credit Card,4000,INR,Marketing,Neha Patel,Paid,INV-1019,Recruitment drive,Vivaan Agarwal
-2025-02-25,EXP-0020,Meals,Team breakfast,Local Cafe,Cash,1500,INR,HR,Priya Singh,Reimbursed,INV-1020,Monthly meetup,Divya Kapoor
-2025-03-01,EXP-0021,Software,GitHub team plan,GitHub,Bank Transfer,3000,INR,Engineering,Daksh Gautam,Paid,INV-1021,-,Rajat Verma
-2025-03-04,EXP-0022,Travel,Hyderabad client meet,Indigo Airlines,Credit Card,6500,INR,Sales,Rahul Sharma,Pending,INV-1022,Project discussion,Zoya Khan
-2025-03-07,EXP-0023,Marketing,Brochure printing,Local Printer,Cash,2800,INR,Marketing,Neha Patel,Paid,INV-1023,New brochure,Aditi Trivedi
-2025-03-10,EXP-0024,Utilities,Water cooler service,Kent,UPI,1200,INR,Operations,Priya Singh,Reimbursed,INV-1024,Annual maintenance,Karan Malhotra
-2025-03-12,EXP-0025,Training,DevOps certification,Udacity,Credit Card,3500,INR,Engineering,Daksh Gautam,Paid,INV-1025,Server training,Meera Bhatt
-2025-03-15,EXP-0026,Supplies,Whiteboard markers,Amazon,UPI,600,INR,HR,Alok Nawani,Paid,INV-1026,-,Rishi Kapoor
-2025-03-18,EXP-0027,Travel,Chennai workshop,Indigo Airlines,Bank Transfer,7200,INR,Engineering,Daksh Gautam,Pending,INV-1027,AI conference,Pranav Joshi
-2025-03-20,EXP-0028,Marketing,Twitter ads,Twitter,Credit Card,2500,INR,Marketing,Neha Patel,Reimbursed,INV-1028,Social campaign,Ira Saxena
-2025-03-22,EXP-0029,Meals,Lunch with new hires,Box8,Cash,2000,INR,HR,Priya Singh,Paid,INV-1029,Onboarding,Varun Reddy
-2025-03-25,EXP-0030,Software,Slack subscription,Slack,UPI,1800,INR,Operations,Daksh Gautam,Paid,INV-1030,Team communication,Anjali Naidu
-2025-03-28,EXP-0031,Travel,Local client meetings,Quickride,Cash,800,INR,Sales,Rahul Sharma,Reimbursed,INV-1031,-,Kabir Malhotra
-2025-04-01,EXP-0032,Marketing,Email tool,Mailchimp,Bank Transfer,4000,INR,Marketing,Neha Patel,Pending,INV-1032,Newsletter setup,Trisha Nair
-2025-04-04,EXP-0033,Utilities,Office cleaning,UrbanClap,Credit Card,1500,INR,Operations,Priya Singh,Paid,INV-1033,Monthly cleaning,Rohan Bhatia
-2025-04-07,EXP-0034,Training,SEO workshop,Local Institute,UPI,2000,INR,Marketing,Neha Patel,Reimbursed,INV-1034,Digital marketing,Shivani Kapoor
-2025-04-10,EXP-0035,Supplies,Notepads and pens,Amazon,Cash,900,INR,HR,Alok Nawani,Paid,INV-1035,-,Aryan Sharma
-2025-04-12,EXP-0036,Travel,Ahmedabad pitch,Indigo Airlines,Bank Transfer,5800,INR,Sales,Rahul Sharma,Pending,INV-1036,Investor pitch,Nandini Rao
-2025-04-15,EXP-0037,Software,Canva Pro,Canva,Credit Card,1200,INR,Design,Daksh Gautam,Paid,INV-1037,Design assets,Ankit Verma
-2025-04-18,EXP-0038,Marketing,Influencer collaboration,Instagram,UPI,8000,INR,Marketing,Neha Patel,Reimbursed,INV-1038,Product promotion,Sneha Menon
-2025-04-20,EXP-0039,Meals,Team dinner,Barbeque Nation,Cash,4500,INR,Engineering,Daksh Gautam,Paid,INV-1039,Project completion,Rahul Khanna
-2025-04-22,EXP-0040,Utilities,Mobile recharge,Airtel,UPI,500,INR,Operations,Priya Singh,Paid,INV-1040,Office phone,Divyansh Gupta
-2025-04-25,EXP-0041,Travel,Co-working space rent,WeWork,Bank Transfer,12000,INR,Management,Alok Nawani,Pending,INV-1041,Temporary office,Ishita Patel
-2025-04-28,EXP-0042,Training,Data science course,Coursera,Credit Card,3000,INR,Engineering,Daksh Gautam,Reimbursed,INV-1042,ML training,Arnav Joshi
-2025-05-02,EXP-0043,Marketing,Business cards,Vistaprint,UPI,1500,INR,Marketing,Neha Patel,Paid,INV-1043,-,Tanya Oberoi
-2025-05-05,EXP-0044,Supplies,Office plants,Local Nursery,Cash,2000,INR,HR,Priya Singh,Paid,INV-1044,Office decor,Virat Reddy
-2025-05-08,EXP-0045,Travel,Bangalore investor meet,Indigo Airlines,Bank Transfer,6800,INR,Executive,Alok Nawani,Pending,INV-1045,Funding round,Ananya Das
-2025-05-10,EXP-0046,Software,Trello premium,Trello,Credit Card,900,INR,Operations,Daksh Gautam,Paid,INV-1046,Project management,Rajat Khanna
-2025-05-12,EXP-0047,Marketing,Google My Business,Google,UPI,0,INR,Marketing,Neha Patel,Reimbursed,INV-1047,Free listing,Priya Malhotra
-2025-05-15,EXP-0048,Meals,Snacks for team,Local Bakery,Cash,1200,INR,HR,Priya Singh,Paid,INV-1048,Team snack,Kunal Kapoor
-2025-05-18,EXP-0049,Utilities,AC servicing,Local Vendor,Bank Transfer,1800,INR,Operations,Daksh Gautam,Pending,INV-1049,Summer prep,Shivam Joshi
-2025-05-20,EXP-0050,Training,Leadership workshop,Local Coach,Credit Card,5000,INR,Management,Alok Nawani,Paid,INV-1050,Management training,Naina Rao
-2025-05-22,EXP-0051,Travel,Local client visits,Ola,UPI,600,INR,Sales,Rahul Sharma,Reimbursed,INV-1051,-,Rohit Nair
-2025-05-25,EXP-0052,Marketing,Youtube ads,Youtube,Cash,3500,INR,Marketing,Neha Patel,Paid,INV-1052,Video campaign,Aisha Khan
-2025-05-28,EXP-0053,Supplies,Office chairs,Amazon,Bank Transfer,8000,INR,Operations,Priya Singh,Pending,INV-1053,New furniture,Vikram Aditya
-2025-05-30,EXP-0054,Software,Notion upgrade,Notion,Credit Card,1500,INR,Engineering,Daksh Gautam,Paid,INV-1054,Team wiki,Anjali Mishra
-2025-06-02,EXP-0055,Meals,Welcome lunch for intern,Local Restaurant,UPI,1600,INR,HR,Alok Nawani,Reimbursed,INV-1055,Intern onboarding,Rishi Verma
-2025-06-05,EXP-0056,Travel,Delhi industry event,Indigo Airlines,Cash,6200,INR,Marketing,Neha Patel,Paid,INV-1056,Tech conference,Neha Gupta
-2025-06-08,EXP-0057,Utilities,Fire extinguisher refill,Local Vendor,Bank Transfer,900,INR,Operations,Priya Singh,Pending,INV-1057,Safety compliance,Arjun Kapoor
-2025-06-10,EXP-0058,Training,Sales training,Local Expert,Credit Card,2800,INR,Sales,Rahul Sharma,Paid,INV-1058,Sales workshop,Divya Nair
-2025-06-12,EXP-0059,Marketing,Podcast sponsorship,Spotify,UPI,10000,INR,Marketing,Neha Patel,Reimbursed,INV-1059,Brand awareness,Karan Singh
-2025-06-15,EXP-0060,Supplies,Water dispenser,Amazon,Cash,3500,INR,HR,Priya Singh,Paid,INV-1060,-,Ananya Reddy
-2025-06-18,EXP-0061,Travel,Co-founder travel to US,Indigo Airlines,Bank Transfer,45000,INR,Executive,Alok Nawani,Pending,INV-1061,US expansion,Aditya Sharma
-2025-06-20,EXP-0062,Software,QuickBooks subscription,QuickBooks,Credit Card,2500,INR,Finance,Daksh Gautam,Paid,INV-1062,Accounting software,Priya Joshi
-2025-06-22,EXP-0063,Meals,Team outing,Resort,UPI,8000,INR,HR,Alok Nawani,Reimbursed,INV-1063,Team building,Rahul Nautiyal
-2025-06-25,EXP-0064,Marketing,Press release,PR Agency,Bank Transfer,5000,INR,Marketing,Neha Patel,Paid,INV-1064,Product launch,Shivangi Rao
-2025-06-28,EXP-0065,Utilities,Office rent,Property Owner,Cash,30000,INR,Operations,Priya Singh,Pending,INV-1065,Monthly rent,Vedant Bamrara
-2025-07-01,EXP-0066,Training,Cybersecurity course,Coursera,Credit Card,3200,INR,Engineering,Daksh Gautam,Paid,INV-1066,Security training,Ankit Gautam
-2025-07-04,EXP-0067,Travel,Local client meetings,Rapido,UPI,400,INR,Sales,Rahul Sharma,Reimbursed,INV-1067,-,Ishita Nair
-2025-07-07,EXP-0068,Marketing,SEO tools,SEMrush,Bank Transfer,4500,INR,Marketing,Neha Patel,Paid,INV-1068,SEO optimization,Rohan Nawani
-2025-07-10,EXP-0069,Supplies,Office snacks,Amazon,Cash,1200,INR,HR,Priya Singh,Paid,INV-1069,-,Kavya Malhotra
-2025-07-12,EXP-0070,Utilities,Internet upgrade,Jio,UPI,1000,INR,Operations,Daksh Gautam,Pending,INV-1070,Faster connection,Arjun Chatterjee
-2025-07-15,EXP-0071,Training,Product management,Local Institute,Credit Card,4000,INR,Product,Alok Nawani,Paid,INV-1071,Product workshop,Neha Kapoor
-2025-07-18,EXP-0072,Travel,Pune office visit,Indigo Airlines,Bank Transfer,3800,INR,Management,Alok Nawani,Reimbursed,INV-1072,Branch review,Aditi Trivedi
-2025-07-20,EXP-0073,Marketing,LinkedIn recruiter,LinkedIn,Cash,8000,INR,HR,Priya Singh,Paid,INV-1073,Hiring tools,Vikram Joshi
-2025-07-22,EXP-0074,Software,Cloud storage,Google Drive,UPI,600,INR,Engineering,Daksh Gautam,Paid,INV-1074,Data backup,Shreya Gupta
-2025-07-25,EXP-0075,Meals,Client dinner,Taj Hotel,Credit Card,6000,INR,Sales,Rahul Sharma,Pending,INV-1075,Client meeting,Rajat Malhotra
-2025-07-28,EXP-0076,Utilities,Printer maintenance,Local Vendor,Bank Transfer,900,INR,Operations,Priya Singh,Reimbursed,INV-1076,Printer repair,Ananya Iyer
-2025-07-30,EXP-0077,Training,UI/UX workshop,Local Expert,Cash,2500,INR,Design,Daksh Gautam,Paid,INV-1077,Design training,Vivaan Agarwal
-2025-08-02,EXP-0078,Travel,Co-founder to Bangalore,Indigo Airlines,UPI,5200,INR,Executive,Alok Nawani,Paid,INV-1078,Investor meetings,Divya Kapoor
-2025-08-05,EXP-0079,Marketing,Google reviews tool,Local Agency,Credit Card,1500,INR,Marketing,Neha Patel,Reimbursed,INV-1079,Reputation management,Rajat Verma
-2025-08-08,EXP-0080,Supplies,Whiteboard,Amazon,Bank Transfer,2000,INR,Operations,Priya Singh,Pending,INV-1080,Meeting room,Zoya Khan
-2025-08-10,EXP-0081,Software,CRM tool,HubSpot,Cash,5000,INR,Sales,Rahul Sharma,Paid,INV-1081,Sales pipeline,Aditi Trivedi
-2025-08-12,EXP-0082,Meals,Team lunch,Local Cafe,UPI,1800,INR,HR,Alok Nawani,Reimbursed,INV-1082,Monthly gathering,Karan Malhotra
-2025-08-15,EXP-0083,Utilities,Water purifier service,Kent,Credit Card,800,INR,Operations,Priya Singh,Paid,INV-1083,Filter change,Meera Bhatt
-2025-08-18,EXP-0084,Training,Agile methodology,Local Coach,Bank Transfer,3000,INR,Engineering,Daksh Gautam,Pending,INV-1084,Process improvement,Rishi Kapoor
-2025-08-20,EXP-0085,Travel,Local client visits,Ola,Cash,700,INR,Sales,Rahul Sharma,Paid,INV-1085,-,Pranav Joshi
-2025-08-22,EXP-0086,Marketing,Content writer,Freelancer,UPI,6000,INR,Marketing,Neha Patel,Reimbursed,INV-1086,Blog posts,Ira Saxena
-2025-08-25,EXP-0087,Supplies,Office tea/coffee,Amazon,Credit Card,1500,INR,HR,Priya Singh,Paid,INV-1087,-,Varun Reddy
-2025-08-28,EXP-0088,Software,Password manager,LastPass,Bank Transfer,1200,INR,Engineering,Daksh Gautam,Paid,INV-1088,Security tool,Anjali Naidu
-2025-08-30,EXP-0089,Meals,Welcome lunch,Local Restaurant,Cash,2000,INR,HR,Alok Nawani,Reimbursed,INV-1089,New hire,Kabir Malhotra
-2025-09-02,EXP-0090,Travel,Industry conference,Indigo Airlines,UPI,7500,INR,Marketing,Neha Patel,Pending,INV-1090,Annual conference,Trisha Nair
-2025-09-05,EXP-0091,Utilities,Electricity deposit,BSES,Credit Card,5000,INR,Operations,Priya Singh,Paid,INV-1091,Security deposit,Rohan Bhatia
-2025-09-08,EXP-0092,Training,Customer support,Local Expert,Bank Transfer,2200,INR,Operations,Daksh Gautam,Reimbursed,INV-1092,Support training,Shivani Kapoor
-2025-09-10,EXP-0093,Marketing,Event sponsorship,Local Event,Cash,10000,INR,Marketing,Neha Patel,Paid,INV-1093,Tech fest,Aryan Sharma
-2025-09-12,EXP-0094,Supplies,Office first aid,Amazon,UPI,800,INR,HR,Priya Singh,Paid,INV-1094,Medical kit,Nandini Rao
-2025-09-15,EXP-0095,Travel,Client meeting in Chennai,Indigo Airlines,Credit Card,5800,INR,Sales,Rahul Sharma,Pending,INV-1095,Project discussion,Ankit Verma
-2025-09-18,EXP-0096,Software,Analytics tool,Google Analytics,Bank Transfer,0,INR,Marketing,Neha Patel,Paid,INV-1096,Free plan,Sneha Menon
-2025-09-20,EXP-0097,Meals,Team dinner,Local Restaurant,Cash,3000,INR,Engineering,Daksh Gautam,Reimbursed,INV-1097,Release celebration,Rahul Khanna
-2025-09-22,EXP-0098,Utilities,Office plants maintenance,Local Vendor,UPI,500,INR,Operations,Priya Singh,Paid,INV-1098,Plant care,Divyansh Gupta
-2025-09-25,EXP-0099,Training,Finance for founders,Local Workshop,Credit Card,3500,INR,Finance,Alok Nawani,Paid,INV-1099,Financial planning,Ishita Patel
-2025-09-28,EXP-0100,Marketing,Swag for employees,Local Vendor,Bank Transfer,6000,INR,HR,Priya Singh,Reimbursed,INV-1100,Company t-shirts,Arnav Joshi
+Date,Expense ID,Category,Description,Vendor,Payment Method,Amount,Currency,Department,Approved By,Status,Invoice No.,Notes,Employee Name,Email
+2025-01-05,EXP-0001,Travel,Client meeting in Mumbai,Ola,Cash,30000,INR,Sales,Rahul Sharma,Paid,INV-1001,-,Shreyash Bamrara,shreyashbamrara@gmail.com
+2025-01-07,EXP-0002,Software,Subscription for design tool,Adobe,Credit Card,1200,INR,Design,Daksh Gautam,Paid,INV-1002,Monthly subscription,Manas Nautiyal,manasnautiyal2@gmail.com
+2025-01-10,EXP-0003,Meals,Team lunch,Box8,UPI,1800,INR,HR,Alok Nawani,Reimbursed,INV-1003,Team bonding,Riya Chatterjee,riya.chatterjee@example.com
+2025-01-12,EXP-0004,Marketing,Facebook ads,Facebook,Credit Card,5000,INR,Marketing,Neha Patel,Pending,INV-1004,New campaign,Arjun Malhotra,arjun.malhotra@example.com
+2025-01-15,EXP-0005,Supplies,Office stationery,Amazon,UPI,3200,INR,Operations,Priya Singh,Paid,INV-1005,-,Vikram Joshi,vikram.joshi@example.com
+2025-01-18,EXP-0006,Travel,Bangalore conference,Indigo Airlines,Bank Transfer,8500,INR,Sales,Rahul Sharma,Pending,INV-1006,Tech summit,Shreya Gupta,shreya.gupta@example.com
+2025-01-20,EXP-0007,Utilities,Electricity bill,BSES,Cash,4500,INR,Operations,Alok Nawani,Paid,INV-1007,-,Aditya Rao,aditya.rao@example.com
+2025-01-22,EXP-0008,Training,Python workshop,Udemy,Credit Card,1500,INR,Engineering,Daksh Gautam,Reimbursed,INV-1008,Skill development,Kavya Reddy,kavya.reddy@example.com
+2025-01-25,EXP-0009,Marketing,Google Ads,Google,UPI,6000,INR,Marketing,Neha Patel,Paid,INV-1009,-,Rohan Mehra,rohan.mehra@example.com
+2025-01-28,EXP-0010,Supplies,Water bottles,Local Store,Cash,800,INR,HR,Priya Singh,Paid,INV-1010,-,Ananya Iyer,ananya.iyer@example.com
+2025-02-02,EXP-0011,Software,Zoom subscription,Zoom,Bank Transfer,2000,INR,Operations,Daksh Gautam,Pending,INV-1011,Quarterly plan,Vedant Kapoor,vedant.kapoor@example.com
+2025-02-05,EXP-0012,Travel,Client visit in Delhi,Uber,Cash,1200,INR,Sales,Rahul Sharma,Reimbursed,INV-1012,-,Ishaan Banerjee,ishaan.banerjee@example.com
+2025-02-08,EXP-0013,Meals,Dinner with investors,Dominos,UPI,3500,INR,Executive,Alok Nawani,Paid,INV-1013,Funding discussion,Niharika Sinha,niharika.sinha@example.com
+2025-02-10,EXP-0014,Marketing,Instagram promotion,Instagram,Credit Card,3000,INR,Marketing,Neha Patel,Pending,INV-1014,Product launch,Abhishek Nair,abhishek.nair@example.com
+2025-02-12,EXP-0015,Utilities,Internet bill,Airtel,UPI,1800,INR,Operations,Priya Singh,Paid,INV-1015,-,Tanvi Deshpande,tanvi.deshpande@example.com
+2025-02-15,EXP-0016,Training,React JS course,Coursera,Bank Transfer,2500,INR,Engineering,Daksh Gautam,Reimbursed,INV-1016,Frontend upgrade,Siddharth Menon,siddharth.menon@example.com
+2025-02-18,EXP-0017,Travel,Pune office visit,Ola,Cash,900,INR,Management,Alok Nawani,Paid,INV-1017,Branch audit,Aarav Choudhary,aarav.choudhary@example.com
+2025-02-20,EXP-0018,Supplies,Printer cartridges,Amazon,UPI,2200,INR,Operations,Priya Singh,Pending,INV-1018,-,Anika Sharma,anika.sharma@example.com
+2025-02-22,EXP-0019,Marketing,LinkedIn premium,LinkedIn,Credit Card,4000,INR,Marketing,Neha Patel,Paid,INV-1019,Recruitment drive,Vivaan Agarwal,vivaan.agarwal@example.com
+2025-02-25,EXP-0020,Meals,Team breakfast,Local Cafe,Cash,1500,INR,HR,Priya Singh,Reimbursed,INV-1020,Monthly meetup,Divya Kapoor,divya.kapoor@example.com
+2025-03-01,EXP-0021,Software,GitHub team plan,GitHub,Bank Transfer,3000,INR,Engineering,Daksh Gautam,Paid,INV-1021,-,Rajat Verma,rajat.verma@example.com
+2025-03-04,EXP-0022,Travel,Hyderabad client meet,Indigo Airlines,Credit Card,6500,INR,Sales,Rahul Sharma,Pending,INV-1022,Project discussion,Zoya Khan,zoya.khan@example.com
+2025-03-07,EXP-0023,Marketing,Brochure printing,Local Printer,Cash,2800,INR,Marketing,Neha Patel,Paid,INV-1023,New brochure,Aditi Trivedi,aditi.trivedi@example.com
+2025-03-10,EXP-0024,Utilities,Water cooler service,Kent,UPI,1200,INR,Operations,Priya Singh,Reimbursed,INV-1024,Annual maintenance,Karan Malhotra,karan.malhotra@example.com
+2025-03-12,EXP-0025,Training,DevOps certification,Udacity,Credit Card,3500,INR,Engineering,Daksh Gautam,Paid,INV-1025,Server training,Meera Bhatt,meera.bhatt@example.com
+2025-03-15,EXP-0026,Supplies,Whiteboard markers,Amazon,UPI,600,INR,HR,Alok Nawani,Paid,INV-1026,-,Rishi Kapoor,rishi.kapoor@example.com
+2025-03-18,EXP-0027,Travel,Chennai workshop,Indigo Airlines,Bank Transfer,7200,INR,Engineering,Daksh Gautam,Pending,INV-1027,AI conference,Pranav Joshi,pranav.joshi@example.com
+2025-03-20,EXP-0028,Marketing,Twitter ads,Twitter,Credit Card,2500,INR,Marketing,Neha Patel,Reimbursed,INV-1028,Social campaign,Ira Saxena,ira.saxena@example.com
+2025-03-22,EXP-0029,Meals,Lunch with new hires,Box8,Cash,2000,INR,HR,Priya Singh,Paid,INV-1029,Onboarding,Varun Reddy,varun.reddy@example.com
+2025-03-25,EXP-0030,Software,Slack subscription,Slack,UPI,1800,INR,Operations,Daksh Gautam,Paid,INV-1030,Team communication,Anjali Naidu,anjali.naidu@example.com
+2025-03-28,EXP-0031,Travel,Local client meetings,Quickride,Cash,800,INR,Sales,Rahul Sharma,Reimbursed,INV-1031,-,Kabir Malhotra,kabir.malhotra@example.com
+2025-04-01,EXP-0032,Marketing,Email tool,Mailchimp,Bank Transfer,4000,INR,Marketing,Neha Patel,Pending,INV-1032,Newsletter setup,Trisha Nair,trisha.nair@example.com
+2025-04-04,EXP-0033,Utilities,Office cleaning,UrbanClap,Credit Card,1500,INR,Operations,Priya Singh,Paid,INV-1033,Monthly cleaning,Rohan Bhatia,rohan.bhatia@example.com
+2025-04-07,EXP-0034,Training,SEO workshop,Local Institute,UPI,2000,INR,Marketing,Neha Patel,Reimbursed,INV-1034,Digital marketing,Shivani Kapoor,shivani.kapoor@example.com
+2025-04-10,EXP-0035,Supplies,Notepads and pens,Amazon,Cash,900,INR,HR,Alok Nawani,Paid,INV-1035,-,Aryan Sharma,aryan.sharma@example.com
+2025-04-12,EXP-0036,Travel,Ahmedabad pitch,Indigo Airlines,Bank Transfer,5800,INR,Sales,Rahul Sharma,Pending,INV-1036,Investor pitch,Nandini Rao,nandini.rao@example.com
+2025-04-15,EXP-0037,Software,Canva Pro,Canva,Credit Card,1200,INR,Design,Daksh Gautam,Paid,INV-1037,Design assets,Ankit Verma,ankit.verma@example.com
+2025-04-18,EXP-0038,Marketing,Influencer collaboration,Instagram,UPI,8000,INR,Marketing,Neha Patel,Reimbursed,INV-1038,Product promotion,Sneha Menon,sneha.menon@example.com
+2025-04-20,EXP-0039,Meals,Team dinner,Barbeque Nation,Cash,4500,INR,Engineering,Daksh Gautam,Paid,INV-1039,Project completion,Rahul Khanna,rahul.khanna@example.com
+2025-04-22,EXP-0040,Utilities,Mobile recharge,Airtel,UPI,500,INR,Operations,Priya Singh,Paid,INV-1040,Office phone,Divyansh Gupta,divyansh.gupta@example.com
+2025-04-25,EXP-0041,Travel,Co-working space rent,WeWork,Bank Transfer,12000,INR,Management,Alok Nawani,Pending,INV-1041,Temporary office,Ishita Patel,ishita.patel@example.com
+2025-04-28,EXP-0042,Training,Data science course,Coursera,Credit Card,3000,INR,Engineering,Daksh Gautam,Reimbursed,INV-1042,ML training,Arnav Joshi,arnav.joshi@example.com
+2025-05-02,EXP-0043,Marketing,Business cards,Vistaprint,UPI,1500,INR,Marketing,Neha Patel,Paid,INV-1043,-,Tanya Oberoi,tanya.oberoi@example.com
+2025-05-05,EXP-0044,Supplies,Office plants,Local Nursery,Cash,2000,INR,HR,Priya Singh,Paid,INV-1044,Office decor,Virat Reddy,virat.reddy@example.com
+2025-05-08,EXP-0045,Travel,Bangalore investor meet,Indigo Airlines,Bank Transfer,6800,INR,Executive,Alok Nawani,Pending,INV-1045,Funding round,Ananya Das,ananya.das@example.com
+2025-05-10,EXP-0046,Software,Trello premium,Trello,Credit Card,900,INR,Operations,Daksh Gautam,Paid,INV-1046,Project management,Rajat Khanna,rajat.khanna@example.com
+2025-05-12,EXP-0047,Marketing,Google My Business,Google,UPI,0,INR,Marketing,Neha Patel,Reimbursed,INV-1047,Free listing,Priya Malhotra,priya.malhotra@example.com
+2025-05-15,EXP-0048,Meals,Snacks for team,Local Bakery,Cash,1200,INR,HR,Priya Singh,Paid,INV-1048,Team snack,Kunal Kapoor,kunal.kapoor@example.com
+2025-05-18,EXP-0049,Utilities,AC servicing,Local Vendor,Bank Transfer,1800,INR,Operations,Daksh Gautam,Pending,INV-1049,Summer prep,Shivam Joshi,shivam.joshi@example.com
+2025-05-20,EXP-0050,Training,Leadership workshop,Local Coach,Credit Card,5000,INR,Management,Alok Nawani,Paid,INV-1050,Management training,Naina Rao,naina.rao@example.com
+2025-05-22,EXP-0051,Travel,Local client visits,Ola,UPI,600,INR,Sales,Rahul Sharma,Reimbursed,INV-1051,-,Rohit Nair,rohit.nair@example.com
+2025-05-25,EXP-0052,Marketing,Youtube ads,Youtube,Cash,3500,INR,Marketing,Neha Patel,Paid,INV-1052,Video campaign,Aisha Khan,aisha.khan@example.com
+2025-05-28,EXP-0053,Supplies,Office chairs,Amazon,Bank Transfer,8000,INR,Operations,Priya Singh,Pending,INV-1053,New furniture,Vikram Aditya,vikram.aditya@example.com
+2025-05-30,EXP-0054,Software,Notion upgrade,Notion,Credit Card,1500,INR,Engineering,Daksh Gautam,Paid,INV-1054,Team wiki,Anjali Mishra,anjali.mishra@example.com
+2025-06-02,EXP-0055,Meals,Welcome lunch for intern,Local Restaurant,UPI,1600,INR,HR,Alok Nawani,Reimbursed,INV-1055,Intern onboarding,Rishi Verma,rishi.verma@example.com
+2025-06-05,EXP-0056,Travel,Delhi industry event,Indigo Airlines,Cash,6200,INR,Marketing,Neha Patel,Paid,INV-1056,Tech conference,Neha Gupta,neha.gupta@example.com
+2025-06-08,EXP-0057,Utilities,Fire extinguisher refill,Local Vendor,Bank Transfer,900,INR,Operations,Priya Singh,Pending,INV-1057,Safety compliance,Arjun Kapoor,arjun.kapoor@example.com
+2025-06-10,EXP-0058,Training,Sales training,Local Expert,Credit Card,2800,INR,Sales,Rahul Sharma,Paid,INV-1058,Sales workshop,Divya Nair,divya.nair@example.com
+2025-06-12,EXP-0059,Marketing,Podcast sponsorship,Spotify,UPI,10000,INR,Marketing,Neha Patel,Reimbursed,INV-1059,Brand awareness,Karan Singh,karan.singh@example.com
+2025-06-15,EXP-0060,Supplies,Water dispenser,Amazon,Cash,3500,INR,HR,Priya Singh,Paid,INV-1060,-,Ananya Reddy,ananya.reddy@example.com
+2025-06-18,EXP-0061,Travel,Co-founder travel to US,Indigo Airlines,Bank Transfer,45000,INR,Executive,Alok Nawani,Pending,INV-1061,US expansion,Aditya Sharma,aditya.sharma@example.com
+2025-06-20,EXP-0062,Software,QuickBooks subscription,QuickBooks,Credit Card,2500,INR,Finance,Daksh Gautam,Paid,INV-1062,Accounting software,Priya Joshi,priya.joshi@example.com
+2025-06-22,EXP-0063,Meals,Team outing,Resort,UPI,8000,INR,HR,Alok Nawani,Reimbursed,INV-1063,Team building,Rahul Nautiyal,rahul.nautiyal@example.com
+2025-06-25,EXP-0064,Marketing,Press release,PR Agency,Bank Transfer,5000,INR,Marketing,Neha Patel,Paid,INV-1064,Product launch,Shivangi Rao,shivangi.rao@example.com
+2025-06-28,EXP-0065,Utilities,Office rent,Property Owner,Cash,30000,INR,Operations,Priya Singh,Pending,INV-1065,Monthly rent,Vedant Bamrara,vedant.bamrara@example.com
+2025-07-01,EXP-0066,Training,Cybersecurity course,Coursera,Credit Card,3200,INR,Engineering,Daksh Gautam,Paid,INV-1066,Security training,Ankit Gautam,ankit.gautam@example.com
+2025-07-04,EXP-0067,Travel,Local client meetings,Rapido,UPI,400,INR,Sales,Rahul Sharma,Reimbursed,INV-1067,-,Ishita Nair,ishita.nair@example.com
+2025-07-07,EXP-0068,Marketing,SEO tools,SEMrush,Bank Transfer,4500,INR,Marketing,Neha Patel,Paid,INV-1068,SEO optimization,Rohan Nawani,rohan.nawani@example.com
+2025-07-10,EXP-0069,Supplies,Office snacks,Amazon,Cash,1200,INR,HR,Priya Singh,Paid,INV-1069,-,Kavya Malhotra,kavya.malhotra@example.com
+2025-07-12,EXP-0070,Utilities,Internet upgrade,Jio,UPI,1000,INR,Operations,Daksh Gautam,Pending,INV-1070,Faster connection,Arjun Chatterjee,arjun.chatterjee@example.com
+2025-07-15,EXP-0071,Training,Product management,Local Institute,Credit Card,4000,INR,Product,Alok Nawani,Paid,INV-1071,Product workshop,Neha Kapoor,neha.kapoor@example.com
+2025-07-18,EXP-0072,Travel,Pune office visit,Indigo Airlines,Bank Transfer,3800,INR,Management,Alok Nawani,Reimbursed,INV-1072,Branch review,Aditi Trivedi,aditi.trivedi@example.com
+2025-07-20,EXP-0073,Marketing,LinkedIn recruiter,LinkedIn,Cash,8000,INR,HR,Priya Singh,Paid,INV-1073,Hiring tools,Vikram Joshi,vikram.joshi@example.com
+2025-07-22,EXP-0074,Software,Cloud storage,Google Drive,UPI,600,INR,Engineering,Daksh Gautam,Paid,INV-1074,Data backup,Shreya Gupta,shreya.gupta@example.com
+2025-07-25,EXP-0075,Meals,Client dinner,Taj Hotel,Credit Card,6000,INR,Sales,Rahul Sharma,Pending,INV-1075,Client meeting,Rajat Malhotra,rajat.malhotra@example.com
+2025-07-28,EXP-0076,Utilities,Printer maintenance,Local Vendor,Bank Transfer,900,INR,Operations,Priya Singh,Reimbursed,INV-1076,Printer repair,Ananya Iyer,ananya.iyer@example.com
+2025-07-30,EXP-0077,Training,UI/UX workshop,Local Expert,Cash,2500,INR,Design,Daksh Gautam,Paid,INV-1077,Design training,Vivaan Agarwal,vivaan.agarwal@example.com
+2025-08-02,EXP-0078,Travel,Co-founder to Bangalore,Indigo Airlines,UPI,5200,INR,Executive,Alok Nawani,Paid,INV-1078,Investor meetings,Divya Kapoor,divya.kapoor@example.com
+2025-08-05,EXP-0079,Marketing,Google reviews tool,Local Agency,Credit Card,1500,INR,Marketing,Neha Patel,Reimbursed,INV-1079,Reputation management,Rajat Verma,rajat.verma@example.com
+2025-08-08,EXP-0080,Supplies,Whiteboard,Amazon,Bank Transfer,2000,INR,Operations,Priya Singh,Pending,INV-1080,Meeting room,Zoya Khan,zoya.khan@example.com
+2025-08-10,EXP-0081,Software,CRM tool,HubSpot,Cash,5000,INR,Sales,Rahul Sharma,Paid,INV-1081,Sales pipeline,Aditi Trivedi,aditi.trivedi@example.com
+2025-08-12,EXP-0082,Meals,Team lunch,Local Cafe,UPI,1800,INR,HR,Alok Nawani,Reimbursed,INV-1082,Monthly gathering,Karan Malhotra,karan.malhotra@example.com
+2025-08-15,EXP-0083,Utilities,Water purifier service,Kent,Credit Card,800,INR,Operations,Priya Singh,Paid,INV-1083,Filter change,Meera Bhatt,meera.bhatt@example.com
+2025-08-18,EXP-0084,Training,Agile methodology,Local Coach,Bank Transfer,3000,INR,Engineering,Daksh Gautam,Pending,INV-1084,Process improvement,Rishi Kapoor,rishi.kapoor@example.com
+2025-08-20,EXP-0085,Travel,Local client visits,Ola,Cash,700,INR,Sales,Rahul Sharma,Paid,INV-1085,-,Pranav Joshi,pranav.joshi@example.com
+2025-08-22,EXP-0086,Marketing,Content writer,Freelancer,UPI,6000,INR,Marketing,Neha Patel,Reimbursed,INV-1086,Blog posts,Ira Saxena,ira.saxena@example.com
+2025-08-25,EXP-0087,Supplies,Office tea/coffee,Amazon,Credit Card,1500,INR,HR,Priya Singh,Paid,INV-1087,-,Varun Reddy,varun.reddy@example.com
+2025-08-28,EXP-0088,Software,Password manager,LastPass,Bank Transfer,1200,INR,Engineering,Daksh Gautam,Paid,INV-1088,Security tool,Anjali Naidu,anjali.naidu@example.com
+2025-08-30,EXP-0089,Meals,Welcome lunch,Local Restaurant,Cash,2000,INR,HR,Alok Nawani,Reimbursed,INV-1089,New hire,Kabir Malhotra,kabir.malhotra@example.com
+2025-09-02,EXP-0090,Travel,Industry conference,Indigo Airlines,UPI,7500,INR,Marketing,Neha Patel,Pending,INV-1090,Annual conference,Trisha Nair,trisha.nair@example.com
+2025-09-05,EXP-0091,Utilities,Electricity deposit,BSES,Credit Card,5000,INR,Operations,Priya Singh,Paid,INV-1091,Security deposit,Rohan Bhatia,rohan.bhatia@example.com
+2025-09-08,EXP-0092,Training,Customer support,Local Expert,Bank Transfer,2200,INR,Operations,Daksh Gautam,Reimbursed,INV-1092,Support training,Shivani Kapoor,shivani.kapoor@example.com
+2025-09-10,EXP-0093,Marketing,Event sponsorship,Local Event,Cash,10000,INR,Marketing,Neha Patel,Paid,INV-1093,Tech fest,Aryan Sharma,aryan.sharma@example.com
+2025-09-12,EXP-0094,Supplies,Office first aid,Amazon,UPI,800,INR,HR,Priya Singh,Paid,INV-1094,Medical kit,Nandini Rao,nandini.rao@example.com
+2025-09-15,EXP-0095,Travel,Client meeting in Chennai,Indigo Airlines,Credit Card,5800,INR,Sales,Rahul Sharma,Pending,INV-1095,Project discussion,Ankit Verma,ankit.verma@example.com
+2025-09-18,EXP-0096,Software,Analytics tool,Google Analytics,Bank Transfer,0,INR,Marketing,Neha Patel,Paid,INV-1096,Free plan,Sneha Menon,sneha.menon@example.com
+2025-09-20,EXP-0097,Meals,Team dinner,Local Restaurant,Cash,3000,INR,Engineering,Daksh Gautam,Reimbursed,INV-1097,Release celebration,Rahul Khanna,rahul.khanna@example.com
+2025-09-22,EXP-0098,Utilities,Office plants maintenance,Local Vendor,UPI,500,INR,Operations,Priya Singh,Paid,INV-1098,Plant care,Divyansh Gupta,divyansh.gupta@example.com
+2025-09-25,EXP-0099,Training,Finance for founders,Local Workshop,Credit Card,3500,INR,Finance,Alok Nawani,Paid,INV-1099,Financial planning,Ishita Patel,ishita.patel@example.com
+2025-09-28,EXP-0100,Marketing,Swag for employees,Local Vendor,Bank Transfer,6000,INR,HR,Priya Singh,Reimbursed,INV-1100,Company t-shirts,Arnav Joshi,arnav.joshi@example.com
+,dakshgautam6456@gmail.com,
+,manasnautiyal2@gmail.com,

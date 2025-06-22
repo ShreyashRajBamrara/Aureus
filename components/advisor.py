@@ -13,6 +13,7 @@ from langchain_core.prompts import (
 )
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
+import logging
 
 load_dotenv('./../.env')
 
@@ -20,57 +21,34 @@ load_dotenv('./../.env')
 base_url = "http://localhost:11434"
 model = 'tinyllama:latest'
 
-# Financial advisor system prompt
+# Financial advisor system prompt (updated for generic chatbot)
 financial_advisor_prompt = '''
-You are a professional financial advisor designed to provide comprehensive financial guidance. Your role is to:
+You are a professional financial assistant chatbot for a business. You can:
 
-1. Analyze financial questions and provide detailed, actionable advice
-2. Maintain a professional and clear communication style
-3. Focus on practical, implementable solutions
-4. Consider both short-term and long-term financial implications
-5. Provide balanced and responsible financial recommendations
+1. Answer general financial questions and provide advice
+2. Run financial forecasts on the company's transaction data
+3. Detect anomalies (unusual transactions) in the company's transaction data
 
-You must follow these guidelines:
+You have access to the company's financial data (uploaded as a CSV), and can use advanced tools to:
+- Predict future spending (forecasting)
+- Find unusual or suspicious transactions (anomaly detection)
 
-1. Always maintain a professional tone
-2. Provide specific, actionable advice
-3. Include relevant financial considerations
-4. Explain complex concepts in clear terms
-5. Consider risk factors in recommendations
-6. Suggest practical next steps
-7. Include relevant financial metrics when applicable
-8. Reference industry best practices
-9. Consider regulatory and compliance aspects
-10. Maintain ethical standards in all advice
-
-Your responses should be:
-- Clear and concise
-- Well-structured
-- Professional
-- Actionable
-- Educational
-- Balanced
-- Risk-aware
-- Compliance-conscious
-
-Remember to:
-- Focus on the user's specific financial situation
-- Provide context for recommendations
-- Include relevant financial metrics
-- Suggest practical implementation steps
-- Consider both opportunities and risks
-- Reference industry standards
-- Maintain professional boundaries
-- Prioritize user's financial well-being
-
-Respond to financial queries with comprehensive, professional advice that helps users make informed financial decisions.
+If the user asks for a forecast, prediction, or future trend, run the forecasting tool and show the results (including charts and summaries).
+If the user asks about anomalies, unusual transactions, or suspicious activity, run the anomaly detection tool and show the results (including tables and summaries).
+For all other questions, answer as a helpful, professional financial assistant.
 '''
 
 class AIAdvisor:
     def __init__(self):
+        self.logger = logging.getLogger(__name__)
         self.chat_history = []
         self.load_chat_history()
         self.setup_chain()
+        # Add forecasting and anomaly detection tools
+        from components.forecasting import FinancialForecaster
+        from components.anomaly import AnomalyDetector
+        self.forecaster = FinancialForecaster()
+        self.anomaly_detector = AnomalyDetector()
     
     def setup_chain(self):
         """Setup the financial advisor chain"""
@@ -86,85 +64,137 @@ class AIAdvisor:
         self.chain = prompt | llm | StrOutputParser()
     
     def load_chat_history(self):
-        """Load chat history from file"""
+        """Load chat history from file, ignore errors and don't show warnings to user"""
         chat_file = Path("data/chat_history/chat.json")
         if chat_file.exists():
             try:
                 with open(chat_file, 'r') as f:
                     self.chat_history = json.load(f)
             except Exception as e:
-                st.warning(f"Could not load chat history: {str(e)}")
+                # Log error silently, don't show warning
+                self.logger.error(f"Could not load chat history: {str(e)}")
                 self.chat_history = []
     
     def save_chat_history(self):
-        """Save chat history to file"""
+        """Save chat history to file, convert non-serializable objects and suppress warnings"""
         chat_file = Path("data/chat_history/chat.json")
         try:
+            # Convert DataFrames to dict or string summary before saving
+            serializable_history = []
+            for msg in self.chat_history:
+                msg_copy = msg.copy()
+                content = msg_copy.get("content")
+                if isinstance(content, dict):
+                    # If tool output contains DataFrame, convert to dict or summary
+                    if "anomalies" in content and hasattr(content["anomalies"], "to_dict"):
+                        anomalies = content["anomalies"]
+                        msg_copy["content"] = dict(content)
+                        msg_copy["content"]["anomalies"] = anomalies.head(10).to_dict()  # Only save first 10 rows
+                    elif "forecast" in content and isinstance(content["forecast"], dict):
+                        forecast = content["forecast"].copy()
+                        if "data" in forecast and hasattr(forecast["data"], "to_dict"):
+                            forecast["data"] = forecast["data"].head(10).to_dict()  # Only save first 10 rows
+                        if "plot" in forecast:
+                            forecast["plot"] = "[plot omitted]"
+                        msg_copy["content"]["forecast"] = forecast
+                serializable_history.append(msg_copy)
             with open(chat_file, 'w') as f:
-                json.dump(self.chat_history, f)
+                json.dump(serializable_history, f)
         except Exception as e:
-            st.warning(f"Could not save chat history: {str(e)}")
+            # Log error silently, don't show warning
+            self.logger.error(f"Could not save chat history: {str(e)}")
+    
+    def parse_intent(self, input_text):
+        """Parse user input to determine if it's a forecast, anomaly, or general query"""
+        forecast_keywords = ["forecast", "predict", "future", "trend"]
+        anomaly_keywords = ["anomaly", "anomalies", "unusual", "suspicious", "outlier", "detect"]
+        text = input_text.lower()
+        if any(word in text for word in forecast_keywords):
+            return "forecast"
+        if any(word in text for word in anomaly_keywords):
+            return "anomaly"
+        return "general"
     
     def generate_response(self, input_text, username=None):
-        """Generate response using the financial advisor chain"""
+        """Generate response using the financial advisor chain or run tools if needed"""
         # Add personalization if username is provided
         if username:
             input_text = f"User {username} asks: {input_text}"
-        
-        # Generate response
-        response = self.chain.invoke({"input": input_text})
-        return response
+        # Check for data
+        data = None
+        if 'current_data' in st.session_state and st.session_state.current_data is not None:
+            data = st.session_state.current_data
+        intent = self.parse_intent(input_text)
+        if intent == "forecast" and data is not None:
+            periods = 30  # default
+            forecast_result = self.forecaster.generate_forecast(data, periods)
+            # Prepare summary prompt for LLM
+            summary_prompt = f"Summarize these forecast results for the user in a clear, actionable way: {forecast_result['metrics']}"
+            summary = self.chain.invoke({"input": summary_prompt})
+            return {"type": "forecast", "response": summary, "forecast": forecast_result}
+        elif intent == "anomaly" and data is not None:
+            anomalies = self.anomaly_detector.detect(data)
+            # Prepare summary prompt for LLM
+            if anomalies is not None and not anomalies.empty:
+                summary_prompt = f"Summarize these anomaly results for the user in a clear, actionable way: {anomalies.describe(include='all').to_dict()}"
+            else:
+                summary_prompt = "No anomalies were detected in the data. Summarize this for the user."
+            summary = self.chain.invoke({"input": summary_prompt})
+            return {"type": "anomaly", "response": summary, "anomalies": anomalies}
+        else:
+            response = self.chain.invoke({"input": input_text})
+            return {"type": "general", "response": response}
     
     def render(self):
         """Render the financial advisor interface"""
-        st.subheader("Financial Advisory System")
-        
-        # Add guide card
-        with st.expander("Financial Advisory Guide", expanded=True):
+        st.subheader("Financial Chatbot & Advisor")
+        with st.expander("How to use this chatbot", expanded=True):
             st.markdown("""
-            ### Financial Advisory System
-            
-            **Available Services:**
-            - Financial Analysis and Planning
-            - Investment Strategy
-            - Risk Management
-            - Budgeting and Saving
-            - Debt Management
-            - Retirement Planning
-            - Tax Planning
-            - Estate Planning
-            
-            **Example Inquiries:**
-            - "How should I plan for retirement?"
-            - "What's the best way to manage my investments?"
-            - "How can I improve my credit score?"
-            - "What are good saving strategies?"
-            - "How should I plan my taxes?"
+            - Ask any financial question.
+            - To get a forecast, use words like 'forecast', 'predict', or 'future'.
+            - To detect anomalies, use words like 'anomaly', 'unusual', or 'suspicious'.
             """)
-        
-        # Get username
         username = st.text_input("Enter your name for personalized advice", "")
-        
-        # Display chat history
         for message in self.chat_history:
             with st.chat_message(message["role"]):
-                st.write(message["content"])
-        
-        # Chat input
-        if prompt := st.chat_input("Enter your financial inquiry"):
-            # Add user message to chat
+                if isinstance(message["content"], dict):
+                    # Tool result
+                    if message["content"]["type"] == "forecast":
+                        st.write(message["content"]["response"])
+                        if "forecast" in message["content"] and "plot" in message["content"]["forecast"]:
+                            st.plotly_chart(message["content"]["forecast"]["plot"], use_container_width=True)
+                        if "forecast" in message["content"] and "data" in message["content"]["forecast"]:
+                            st.dataframe(message["content"]["forecast"]["data"])
+                    elif message["content"]["type"] == "anomaly":
+                        st.write(message["content"]["response"])
+                        anomalies = message["content"].get("anomalies")
+                        if anomalies is not None and not anomalies.empty:
+                            st.dataframe(anomalies)
+                        else:
+                            st.info("No anomalies detected.")
+                    else:
+                        st.write(message["content"]["response"])
+                else:
+                    st.write(message["content"])
+        if prompt := st.chat_input("Ask a financial question, or request a forecast/anomaly detection"):
             self.chat_history.append({"role": "user", "content": prompt})
-            
-            # Generate and display response
             with st.chat_message("assistant"):
-                response = self.generate_response(prompt, username)
-                st.write(response)
-                self.chat_history.append({"role": "assistant", "content": response})
-            
-            # Save chat history
+                result = self.generate_response(prompt, username)
+                if isinstance(result, dict):
+                    st.write(result["response"])
+                    if result["type"] == "forecast" and "forecast" in result and "plot" in result["forecast"]:
+                        st.plotly_chart(result["forecast"]["plot"], use_container_width=True)
+                        st.dataframe(result["forecast"]["data"])
+                    elif result["type"] == "anomaly":
+                        anomalies = result.get("anomalies")
+                        if anomalies is not None and not anomalies.empty:
+                            st.dataframe(anomalies)
+                        else:
+                            st.info("No anomalies detected.")
+                else:
+                    st.write(result)
+                self.chat_history.append({"role": "assistant", "content": result})
             self.save_chat_history()
-        
-        # Add clear chat button
         if st.button("Reset Conversation"):
             self.chat_history = []
             self.save_chat_history()

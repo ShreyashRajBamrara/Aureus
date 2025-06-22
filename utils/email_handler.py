@@ -231,6 +231,45 @@ class EmailHandler:
         attachments = [attachment_path] if attachment_path else None
         return self.send_email(recipient, subject, body, attachments)
     
+    def send_anomaly_alert(
+        self,
+        recipient_email: str,
+        employee_name: str,
+        anomaly_details: dict,
+        custom_message: Optional[str] = None
+    ) -> bool:
+        """
+        Send an email alert for a detected anomaly.
+        
+        Args:
+            recipient_email: Email address of the recipient
+            employee_name: Name of the employee associated with the anomaly
+            anomaly_details: Dictionary containing details of the anomaly
+            custom_message: Optional custom message to include in the email
+            
+        Returns:
+            bool: True if email was sent successfully, False otherwise
+        """
+        subject = "Anomaly Detected in Your Recent Transaction"
+        
+        body = f"""
+        Dear {employee_name},
+
+        An anomaly has been detected in one of your recent transactions:
+
+        - **Date:** {anomaly_details.get('Date', 'N/A')}
+        - **Description:** {anomaly_details.get('Description', 'N/A')}
+        - **Amount:** {anomaly_details.get('Amount', 'N/A')}
+        - **Vendor:** {anomaly_details.get('Vendor', 'N/A')}
+        """
+
+        if custom_message:
+            body += f"\n**Notes:**\n{custom_message}\n"
+
+        body += "\nPlease review this transaction and provide clarification if necessary.\n\nThis is an automated message from the Aureus finance application."
+
+        return self.send_email(recipient_email, subject, body)
+    
     def send_alert(
         self,
         recipient: str,

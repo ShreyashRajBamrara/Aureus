@@ -12,7 +12,7 @@ from utils.data_preprocessor import DataPreprocessor
 from components.advisor import AIAdvisor
 from components.forecasting import FinancialForecaster
 from components.anomaly import AnomalyDetector
-from components.definitions import FinancialDefinitions
+from components.email_center import EmailCenter
 
 # Load environment variables
 load_dotenv()
@@ -38,13 +38,15 @@ class FinanceApp:
         self.forecaster = FinancialForecaster()
         self.anomaly_detector = AnomalyDetector()
         self.data_preprocessor = DataPreprocessor()
-        self.definitions = FinancialDefinitions()
+        self.email_center = EmailCenter()
         
         # Initialize session state
         if 'current_data' not in st.session_state:
             st.session_state.current_data = None
         if 'user_id' not in st.session_state:
             st.session_state.user_id = "default_user"
+        if 'anomalies' not in st.session_state:
+            st.session_state.anomalies = None
     
     def run(self):
         """Main application runner"""
@@ -54,31 +56,57 @@ class FinanceApp:
         st.sidebar.title("Navigation")
         page = st.sidebar.radio(
             "Go to",
-            ["Dashboard", "Data Upload", "Forecasting", "Anomaly Detection", "AI Advisor", "Reports", "Understanding"]
+            ["Home", "Data Upload", "Dashboard", "Forecasting", "Anomaly Detection", "Email Center", "AI Advisor"]
         )
         
         # User ID input in sidebar
-        st.sidebar.text_input("User ID", key="user_id", value=st.session_state.user_id)
+        if 'user_id' not in st.session_state:
+            st.session_state.user_id = "default_user"
+        st.sidebar.text_input("User ID", key="user_id")
         
         # Load data if available
         if st.session_state.current_data is not None:
             self.dashboard.load_data(st.session_state.current_data)
         
         # Page routing
-        if page == "Dashboard":
-            self.show_dashboard()
+        if page == "Home":
+            self.show_home()
         elif page == "Data Upload":
             self.show_data_upload()
+        elif page == "Dashboard":
+            self.show_dashboard()
         elif page == "Forecasting":
             self.show_forecasting()
         elif page == "Anomaly Detection":
             self.show_anomaly_detection()
+        elif page == "Email Center":
+            self.show_email_center()
         elif page == "AI Advisor":
             self.show_ai_advisor()
-        elif page == "Reports":
-            self.show_reports()
-        elif page == "Understanding":
-            self.show_understanding()
+    
+    def show_home(self):
+        st.header("Welcome to Aureus!")
+        st.markdown("""
+        **Aureus** is your all-in-one financial analysis and anomaly detection system for startups and businesses.
+        
+        ### Key Features
+        - **Data Upload:** Easily upload your financial transaction data (CSV format).
+        - **Dashboard:** Visualize your financial health with interactive charts and summaries.
+        - **Forecasting:** Predict future trends using advanced forecasting models.
+        - **Anomaly Detection:** Automatically flag unusual or suspicious transactions.
+        - **Email Center:** Instantly notify team members about anomalies via email.
+        - **AI Advisor:** Get AI-powered financial advice and insights.
+        
+        ### How It Works
+        1. **Upload your data** on the Data Upload page.
+        2. **Explore your finances** on the Dashboard.
+        3. **Run forecasting** to see future trends.
+        4. **Detect anomalies** and review flagged transactions.
+        5. **Send alerts** to relevant people from the Email Center.
+        6. **Ask questions** or get help from the AI Advisor.
+        
+        > **Tip:** Use the sidebar to navigate between features. Start with Data Upload!
+        """)
     
     def show_dashboard(self):
         """Render the dashboard page"""
@@ -100,6 +128,9 @@ class FinanceApp:
             try:
                 # Load the sample data
                 df = pd.read_csv("data/aureus_expenditure_with_anomalies.csv")
+                
+                # Store the raw data for anomaly detection
+                st.session_state.raw_data = df.copy()
                 
                 # Preprocess the data
                 processed_df = self.data_preprocessor.preprocess_aureus_data(df)
@@ -186,94 +217,23 @@ class FinanceApp:
         
         if st.button("Run Anomaly Detection"):
             with st.spinner("Detecting anomalies..."):
-                # First, check for obvious anomalies
-                obvious_anomalies = self.data_preprocessor.detect_anomalies(st.session_state.current_data)
-                if not obvious_anomalies.empty:
-                    st.warning("Found obvious anomalies in the data:")
-                    st.dataframe(obvious_anomalies)
-                
-                # Then run the ML-based anomaly detection
-                anomalies = self.anomaly_detector.detect(st.session_state.current_data)
-                if not anomalies.empty:
-                    st.warning(f"Found {len(anomalies)} ML-detected anomalies!")
-                    st.dataframe(anomalies)
-                    
-                    # Option to send email alert
-                    if st.button("Send Alert Email"):
-                        email_sent = self.email_handler.send_alert(
-                            recipient=os.getenv("ALERT_RECIPIENT"),
-                            alert_type="Financial Anomaly",
-                            alert_message=f"Found {len(anomalies)} anomalous transactions"
-                        )
-                        if email_sent:
-                            st.success("Alert email sent!")
+                if 'raw_data' in st.session_state:
+                    raw_df = st.session_state.raw_data
+                    anomalies = self.anomaly_detector.detect(raw_df)
+                    st.session_state.anomalies = anomalies
+                    self.anomaly_detector.display_anomalies(anomalies)
                 else:
-                    st.success("No ML-detected anomalies found")
+                    st.warning("Please upload or select sample data first.")
+    
+    def show_email_center(self):
+        """Show email center page"""
+        st.header("Email Center")
+        self.email_center.render()
     
     def show_ai_advisor(self):
         """Show AI advisor page"""
         st.header("AI Financial Advisor")
         self.advisor.render()
-    
-    def show_reports(self):
-        """Show reporting page"""
-        st.header("Financial Reports")
-        
-        if st.session_state.current_data is None:
-            st.warning("Please upload data first from the Data Upload page")
-            return
-        
-        report_type = st.selectbox("Report Type", ["Weekly", "Monthly", "Quarterly"])
-        
-        if st.button("Generate Report"):
-            with st.spinner("Generating report..."):
-                # Generate report content
-                df = st.session_state.current_data
-                total_expenses = df['amount'].sum()
-                
-                # Group by category
-                category_totals = df.groupby('category')['amount'].sum().sort_values(ascending=False)
-                
-                # Group by department
-                department_totals = df.groupby('department')['amount'].sum().sort_values(ascending=False)
-                
-                # Group by payment method
-                payment_totals = df.groupby('payment_method')['amount'].sum().sort_values(ascending=False)
-                
-                report = f"""
-                # {report_type} Financial Report
-                
-                ## Summary
-                - Total Expenses: ${total_expenses:,.2f}
-                
-                ## Top Expense Categories
-                {category_totals.head(5).to_markdown()}
-                
-                ## Department-wise Expenses
-                {department_totals.to_markdown()}
-                
-                ## Payment Method Distribution
-                {payment_totals.to_markdown()}
-                
-                ## Status Distribution
-                {df['status'].value_counts().to_markdown()}
-                """
-                
-                st.markdown(report)
-                
-                # Option to email report
-                if st.button("Email This Report"):
-                    email_sent = self.email_handler.send_report(
-                        recipient=os.getenv("REPORT_RECIPIENT"),
-                        report_type=report_type,
-                        report_data=report
-                    )
-                    if email_sent:
-                        st.success("Report emailed successfully!")
-
-    def show_understanding(self):
-        """Show the Understanding page with financial terms and definitions"""
-        self.definitions.render()
 
 if __name__ == "__main__":
     app = FinanceApp()

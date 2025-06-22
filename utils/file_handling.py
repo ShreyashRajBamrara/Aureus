@@ -145,15 +145,7 @@ class FileHandler:
             return False, str(e)
     
     def read_csv(self, file_path: str) -> Tuple[Optional[pd.DataFrame], Optional[str]]:
-        """
-        Read a CSV file and return the DataFrame and any error message.
         
-        Args:
-            file_path: Path to the CSV file
-            
-        Returns:
-            Tuple of (DataFrame, error_message)
-        """
         try:
             df = pd.read_csv(file_path)
             logger.info(f"Successfully read CSV file: {file_path}")
@@ -187,4 +179,11 @@ class FileHandler:
         except Exception as e:
             error_msg = f"Error deleting file: {str(e)}"
             logger.error(error_msg)
-            return False, error_msg 
+            return False, error_msg
+
+    def save_temp_file(self, df):
+        temp_dir = "data/temp"
+        os.makedirs(temp_dir, exist_ok=True)
+        temp_path = os.path.join(temp_dir, f"temp_report_{pd.Timestamp.now().strftime('%Y%m%d%H%M%S')}.csv")
+        df.to_csv(temp_path, index=False)
+        return temp_path 

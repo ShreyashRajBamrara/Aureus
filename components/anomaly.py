@@ -5,6 +5,7 @@ from sklearn.preprocessing import StandardScaler
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
 import logging
+import streamlit as st
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -28,17 +29,25 @@ class AnomalyDetector:
     def _prepare_features(self, data):
         """Prepare features for anomaly detection"""
         # Ensure date column is datetime
-        if 'date' not in data.columns:
-            raise ValueError("Data must contain a 'date' column")
-        
-        data['date'] = pd.to_datetime(data['date'])
+        if 'date' in data.columns:
+            data['date'] = pd.to_datetime(data['date'])
+        elif 'Date' in data.columns:
+            data['date'] = pd.to_datetime(data['Date'])
+        else:
+            raise ValueError("Data must contain a 'date' or 'Date' column")
         
         # Create features
         features = pd.DataFrame()
         
         # Amount-based features
-        features['amount'] = data['amount']
-        features['amount_abs'] = data['amount'].abs()
+        if 'amount' in data.columns:
+            features['amount'] = data['amount']
+            features['amount_abs'] = data['amount'].abs()
+        elif 'Amount' in data.columns:
+            features['amount'] = data['Amount']
+            features['amount_abs'] = data['Amount'].abs()
+        else:
+            raise ValueError("Data must contain an 'amount' or 'Amount' column")
         
         # Time-based features
         features['day_of_week'] = data['date'].dt.dayofweek
@@ -46,7 +55,10 @@ class AnomalyDetector:
         features['month'] = data['date'].dt.month
         
         # Category encoding
-        features['is_expense'] = (data['transaction_type'] == 'expense').astype(int)
+        if 'transaction_type' in data.columns:
+            features['is_expense'] = (data['transaction_type'] == 'expense').astype(int)
+        else:
+            features['is_expense'] = 0
         
         # Calculate rolling statistics
         data_sorted = data.sort_values('date')
@@ -54,7 +66,7 @@ class AnomalyDetector:
         features['rolling_std'] = data_sorted['amount'].rolling(window=7, min_periods=1).std()
         
         # Fill NaN values
-        features = features.fillna(method='bfill').fillna(method='ffill')
+        features = features.bfill().ffill()
         
         return features
     
@@ -82,49 +94,39 @@ class AnomalyDetector:
             # Get anomalies
             anomalies = results[results['is_anomaly']].copy()
             
-            if not anomalies.empty:
-                # Create visualization
-                fig = go.Figure()
-                
-                # Add normal points
-                normal = results[~results['is_anomaly']]
-                fig.add_trace(go.Scatter(
-                    x=normal['date'],
-                    y=normal['amount'],
-                    mode='markers',
-                    name='Normal',
-                    marker=dict(color='blue', size=8)
-                ))
-                
-                # Add anomalies
-                fig.add_trace(go.Scatter(
-                    x=anomalies['date'],
-                    y=anomalies['amount'],
-                    mode='markers',
-                    name='Anomaly',
-                    marker=dict(color='red', size=12, symbol='star')
-                ))
-                
-                # Update layout
-                fig.update_layout(
-                    title='Transaction Anomalies',
-                    xaxis_title='Date',
-                    yaxis_title='Amount ($)',
-                    template='plotly_white',
-                    hovermode='x unified'
-                )
-                
-                # Add anomaly details
-                anomalies['date'] = anomalies['date'].dt.strftime('%Y-%m-%d')
-                anomalies = anomalies.sort_values('anomaly_score')
-                
-                return anomalies
-            else:
-                return pd.DataFrame()  # Return empty DataFrame if no anomalies found
+            return anomalies.sort_values('anomaly_score', ascending=False)
                 
         except Exception as e:
             logger.error(f"Error detecting anomalies: {str(e)}")
-            return pd.DataFrame()  # Return empty DataFrame on error
+            return pd.DataFrame()
+    
+    def display_anomalies(self, anomalies):
+        if anomalies.empty:
+            st.info("No anomalies detected.")
+            return
+
+        st.subheader("Detected Anomalies")
+        
+        # Displaying the plot
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+            x=anomalies['date'],
+            y=anomalies['amount'],
+            mode='markers',
+            marker=dict(color='red', size=10),
+            text=[f"Employee: {name}" for name in anomalies['Employee Name']],
+            hoverinfo='text+x+y'
+        ))
+        fig.update_layout(
+            title='Anomalous Transactions',
+            xaxis_title='Date',
+            yaxis_title='Amount'
+        )
+        st.plotly_chart(fig)
+
+        st.write(anomalies)
+
+        st.info(f"Detected {len(anomalies)} anomalies. You can notify employees from the 'Email Center'.")
     
     def get_anomaly_statistics(self, anomalies):
         """Get statistics about detected anomalies"""
