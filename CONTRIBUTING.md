@@ -29,8 +29,6 @@ flowchart LR
         A1[Shreyash Raj Bamrara] -->|AI Advisor, Data Preprocessing, Visualizations| Project
         A2[Manas Nautiyal] -->|Anomaly Detection, Forecasting| Project
         A3[Daksh Gautam] -->|Frontend, Integration, UI/UX| Project
-        A4[Priya Singh] -->|Testing, Documentation| Project
-        A5[Rohan Mehra] -->|Bug Fixes, Code Review| Project
     end
     Project((Aureus))
 ```
@@ -41,8 +39,6 @@ flowchart LR
 - 2024-03-15: Data preprocessing and dashboard by Shreyash Raj Bamrara
 - 2024-03-20: Frontend integration and UI/UX by Daksh Gautam
 - 2024-03-25: Anomaly detection and forecasting by Manas Nautiyal
-- 2024-04-01: Testing and documentation by Priya Singh
-- 2024-04-05: Bug fixes and code review by Rohan Mehra
 - 2024-04-10: AI Advisor and LLM integration by Shreyash Raj Bamrara
 - 2024-04-15: Multi-user chat and email center by Daksh Gautam
 - 2024-04-20: Advanced analytics and smart summaries by Manas Nautiyal
@@ -53,8 +49,6 @@ flowchart LR
 - Shreyash Raj Bamrara: Developed the AI advisor/chatbot, created the various graphs and visualizations, and built the data preprocessing module.
 - Daksh Gautam: Responsible for the frontend development and integrating the different components into the final application.
 - Manas Nautiyal: Completed the anomaly detection and forecasting parts of the system.
-- Priya Singh: Led testing and documentation efforts.
-- Rohan Mehra: Focused on bug fixes and code review.
 
 ## Report bugs using GitHub's [issue tracker](https://github.com/ShreyashRajBamrara/AureusTwo/issues)
 We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/ShreyashRajBamrara/AureusTwo/issues/new).
